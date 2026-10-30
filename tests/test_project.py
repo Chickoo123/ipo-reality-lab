@@ -22,7 +22,7 @@ def test_public_ui_does_not_expose_internal_build_codes():
 
 def test_pages_workflow_enables_pages_and_publishes_only_site_assets():
     workflow=(ROOT/".github/workflows/pages.yml").read_text(encoding="utf-8")
-    assert "enablement: true" in workflow
+    assert "actions/configure-pages@v5" in workflow and "enablement: true" not in workflow
     assert "path: _site" in workflow
 
 def test_public_audit_brief_and_architecture_docs_exist():

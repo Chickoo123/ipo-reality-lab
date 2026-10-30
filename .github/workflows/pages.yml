@@ -23,14 +23,12 @@ jobs:
       - run: pytest -q
       - run: node --check app.js
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Prepare deployment site
         run: |
           mkdir -p _site/data
           cp index.html app.js styles.css .nojekyll _site/
           cp data/academy.json data/cases.json data/checklist.json data/ipo_records.json data/regulatory_policy.json data/scams.json data/source_registry.json _site/data/
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
   deploy:
