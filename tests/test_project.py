@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
-from validate_data import validate, validate_records, load
+from validate_data import validate, validate_records, validate_json_urls, load
 
 def test_published_dataset_passes_evidence_validation():
     assert validate()==[]
@@ -32,6 +32,7 @@ def test_every_lesson_has_required_learning_parts():
     for lesson in load("academy.json")["modules"]:
         for field in ["plain","example","diagram","formula","can_infer","cannot_infer","quiz","sources"]:
             assert lesson.get(field), (lesson["id"],field)
+        assert len(lesson["quiz"]) >= 3, lesson["id"]
 
 def test_updated_sebi_rule_and_price_data_gate():
     p=load("regulatory_policy.json")
@@ -121,10 +122,55 @@ def test_windows_local_launcher_exists():
     assert "serve_local.py" in launcher.read_text(encoding="utf-8")
 
 
+
+def test_every_lesson_has_three_topic_specific_quiz_questions_and_balanced_answers():
+    rows=load("academy.json")["modules"]
+    questions=[q for lesson in rows for q in lesson["quiz"]]
+    assert len(rows)==27
+    assert len(questions)==81
+    for lesson in rows:
+        assert len(lesson["quiz"])>=3
+        for q in lesson["quiz"]:
+            assert len(q["options"])==4
+            assert len(set(q["options"]))==4
+            assert 0<=q["answer"]<4
+            assert q["explanation"]
+    counts=[sum(1 for q in questions if q["answer"]==i) for i in range(4)]
+    assert max(counts)/len(questions)<0.40
+
+def test_scam_challenges_have_scenario_specific_multiple_choices():
+    rows=load("scams.json")["items"]
+    correct_positions=[]
+    for item in rows:
+        challenge=item["challenge"]
+        assert len(challenge["options"])>=3
+        ids=[x[0] for x in challenge["options"]]
+        assert len(ids)==len(set(ids))
+        assert challenge["correct"] in ids
+        correct_positions.append(ids.index(challenge["correct"]))
+    assert len(set(correct_positions))>=3
+
+def test_report_scope_citations_use_confirmed_printed_pages():
+    record=load("ipo_records.json")["records"][0]
+    assert record["monitoring_agency_scope"]["evidence"]["page"]==10
+    assert record["monitoring_agency_declaration"]["evidence"]["page"]==4
+    assert record["monitoring_agency_scope"]["evidence"]["document_id"]=="monitor-q2-fy25"
+
+def test_json_urls_must_use_https():
+    invalid={"a":{"url":"javascript:alert(1)"},"b":[{"href":"http://example.com"}]}
+    errors=validate_json_urls(invalid)
+    assert len(errors)==2
+    assert all("HTTPS" in item for item in errors)
+
+def test_build_metadata_and_logic_module_are_available():
+    assert (ROOT/"data/build-info.json").exists()
+    assert (ROOT/"logic.js").exists()
+    html=(ROOT/"index.html").read_text(encoding="utf-8")
+    assert html.index('src="logic.js"') < html.index('src="app.js"')
 def test_neon_dark_theme_is_default_and_light_mode_is_opt_in():
     html=(ROOT/"index.html").read_text(encoding="utf-8")
     js=(ROOT/"app.js").read_text(encoding="utf-8")
     css=(ROOT/"styles.css").read_text(encoding="utf-8")
-    assert 'localStorage.getItem("ipoRealityDark")!=="0"' in js
+    assert 'safeStorageGet("ipoRealityDark","1")!=="0"' in js
     assert "#080a16" in css and "#a78bfa" in css and "#22d3ee" in css and "#f472b6" in css
     assert 'id="theme"' in html
