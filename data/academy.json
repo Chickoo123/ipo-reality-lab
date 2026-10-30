@@ -23,14 +23,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits what is an ipo??",
+          "question": "What happens in an IPO?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "A company guarantees a dividend",
+            "A company offers shares to public investors and seeks exchange admission",
+            "An exchange guarantees a price rise",
+            "A private company converts every loan into shares"
+          ],
+          "answer": 1,
+          "explanation": "An IPO is a public share offering and a route to listing, not a return guarantee."
+        },
+        {
+          "question": "What does the offer document primarily provide?",
+          "options": [
+            "A guarantee of future profits",
+            "A promise that every applicant gets shares",
+            "A fixed post-listing market price",
+            "Disclosures about the issuer, the offer and its terms"
+          ],
+          "answer": 3,
+          "explanation": "The offer document provides information investors can examine; it does not guarantee outcomes."
+        },
+        {
+          "question": "What cannot be concluded merely because a company lists?",
+          "options": [
+            "That its share price will rise",
+            "That shares have been admitted to trading",
+            "That continuing disclosure duties apply",
+            "That public investors may hold shares"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "Listing does not guarantee a rising price, strong governance or high liquidity."
         }
       ]
     },
@@ -57,14 +80,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits why do companies go public??",
+          "question": "Which purpose is directly served by a fresh issue?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Paying sale proceeds to an existing shareholder",
+            "Guaranteeing a promoter exit",
+            "Raising new capital for the company",
+            "Fixing the post-listing market price"
           ],
-          "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "answer": 2,
+          "explanation": "Fresh-issue proceeds go to the issuer and may fund the disclosed objects."
+        },
+        {
+          "question": "Who receives proceeds from an Offer for Sale?",
+          "options": [
+            "The company as fresh capital",
+            "The existing shareholders selling their shares",
+            "The stock exchange",
+            "The registrar"
+          ],
+          "answer": 1,
+          "explanation": "In an OFS, existing shareholders sell shares and receive the proceeds."
+        },
+        {
+          "question": "What does an OFS split alone establish about seller motivation?",
+          "options": [
+            "It proves loss of confidence",
+            "It proves overvaluation",
+            "It proves financial distress",
+            "It does not establish the seller’s motivation"
+          ],
+          "answer": 3,
+          "explanation": "An OFS split is an issue-structure fact, not proof of a seller’s reason."
         }
       ]
     },
@@ -91,14 +137,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits private company vs listed company?",
+          "question": "What is a key feature of a listed company?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Shares are admitted to trading and continuing disclosure duties apply",
+            "It can stop publishing material disclosures",
+            "Its share price is guaranteed to be stable",
+            "Its shareholders cannot sell shares"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "Listing brings exchange trading and continuing disclosure responsibilities."
+        },
+        {
+          "question": "Which comparison is generally accurate?",
+          "options": [
+            "A private company has daily exchange prices",
+            "A listed company has no disclosure duties",
+            "A private company usually has a more limited shareholder base",
+            "A listed company cannot have promoters"
+          ],
+          "answer": 2,
+          "explanation": "Private companies generally have a more limited shareholder base than listed companies."
+        },
+        {
+          "question": "What does listing not automatically guarantee?",
+          "options": [
+            "Admission of shares to exchange trading",
+            "High liquidity and good governance",
+            "Continuing disclosure requirements",
+            "A public market in the shares"
+          ],
+          "answer": 1,
+          "explanation": "Listing does not guarantee liquidity or governance quality."
         }
       ]
     },
@@ -125,14 +194,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits how an ipo works in india: drhp to listing?",
+          "question": "Which document is generally the draft filing stage?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Basis of allotment",
+            "Listing notice",
+            "Quarterly result after listing",
+            "Draft Red Herring Prospectus (DRHP)"
+          ],
+          "answer": 3,
+          "explanation": "The DRHP is an early offer-document filing that precedes later updated documents."
+        },
+        {
+          "question": "What is a typical high-level IPO sequence?",
+          "options": [
+            "Draft disclosure, updated offer documents, bidding, allotment and listing",
+            "Listing, then DRHP, then bidding",
+            "Allotment, then price band, then DRHP",
+            "Bidding before any offer document exists"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "The process generally moves from draft disclosure through offer, bidding, allotment and listing."
+        },
+        {
+          "question": "What does a draft filing or regulatory observation guarantee?",
+          "options": [
+            "A fixed listing price",
+            "A guaranteed allotment",
+            "It does not guarantee an issue opening date",
+            "A guaranteed issue opening date"
+          ],
+          "answer": 2,
+          "explanation": "A draft filing or observation is not a promise that an issue will open on a particular date."
         }
       ]
     },
@@ -159,14 +251,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits drhp, rhp and final prospectus?",
+          "question": "Why compare dated DRHP, RHP and prospectus versions?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "To assume the first draft contains final terms",
+            "To identify visible changes in disclosures and terms",
+            "To infer misconduct from every change",
+            "To replace the prospectus with a media summary"
+          ],
+          "answer": 1,
+          "explanation": "A comparison records visible changes between document versions with page evidence."
+        },
+        {
+          "question": "What does a change between offer documents establish by itself?",
+          "options": [
+            "Why the issuer changed it",
+            "That the change was improper",
+            "That the regulator rejected the issuer",
+            "That the disclosed value or wording changed"
+          ],
+          "answer": 3,
+          "explanation": "A factual difference does not establish the reason or prove misconduct."
+        },
+        {
+          "question": "What is necessary for a defensible document comparison?",
+          "options": [
+            "Both dated documents and page references for compared fields",
+            "Only a social-media summary",
+            "Only the final offer price",
+            "An analyst’s guess about the reason"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "Traceability needs the source version and page on both sides."
         }
       ]
     },
@@ -193,14 +308,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits fresh issue vs ofs?",
+          "question": "In a fresh issue, who receives the proceeds?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "The selling shareholder",
+            "The stock exchange",
+            "The issuing company",
+            "The registrar"
           ],
-          "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "answer": 2,
+          "explanation": "The issuer raises new capital by issuing new shares."
+        },
+        {
+          "question": "In an OFS, what happens?",
+          "options": [
+            "The company issues new shares and receives all proceeds",
+            "Existing shareholders sell shares and receive proceeds",
+            "The registrar receives the proceeds",
+            "The exchange retains the proceeds"
+          ],
+          "answer": 1,
+          "explanation": "An OFS is a sale by existing shareholders, not fresh capital for the company."
+        },
+        {
+          "question": "A ₹100 crore issue has ₹70 crore fresh issue and ₹30 crore OFS. What does the company raise before expenses?",
+          "options": [
+            "₹30 crore",
+            "₹100 crore",
+            "₹0 crore",
+            "₹70 crore"
+          ],
+          "answer": 3,
+          "explanation": "Only the fresh-issue portion is raised by the company."
         }
       ]
     },
@@ -227,14 +365,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits face value, premium, price band, floor price and issue price?",
+          "question": "If face value is ₹2 and issue price is ₹100, what is the premium per share?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "₹98",
+            "₹102",
+            "₹50",
+            "₹2"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "Premium is issue price minus face value: ₹100 − ₹2 = ₹98."
+        },
+        {
+          "question": "In a ₹90–₹100 price band, what is the floor price?",
+          "options": [
+            "₹100",
+            "₹95",
+            "₹90",
+            "₹10"
+          ],
+          "answer": 2,
+          "explanation": "The floor is the lower end of the price band; the cap is the upper end."
+        },
+        {
+          "question": "Does a large premium over face value prove an IPO is fairly valued?",
+          "options": [
+            "Yes, a premium always means fair value",
+            "No. Valuation needs financial and peer context",
+            "Yes, if the premium exceeds 25%",
+            "No, because face value equals market capitalisation"
+          ],
+          "answer": 1,
+          "explanation": "Premium is an arithmetic difference from face value, not a valuation conclusion."
         }
       ]
     },
@@ -261,14 +422,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits book building and cut-off price?",
+          "question": "What is book building intended to do?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Guarantee allotment to every applicant",
+            "Set a fixed post-listing market price",
+            "Guarantee demand exceeds the issue",
+            "Use bids within the price band as part of price discovery"
+          ],
+          "answer": 3,
+          "explanation": "Book building gathers bids within the band to help determine the issue price."
+        },
+        {
+          "question": "At a candidate bid price, eligible cumulative demand generally includes:",
+          "options": [
+            "Bids at that price and at higher prices",
+            "Only bids below that price",
+            "Only bids at the floor price",
+            "All bids received after listing"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "For a candidate cut-off, eligible bids are at that price or higher; demand is summed from the cap downward."
+        },
+        {
+          "question": "Does oversubscription alone prove the company is strong or correctly priced?",
+          "options": [
+            "Yes, it proves strong governance",
+            "Yes, it proves the issue is cheap",
+            "No. It measures demand relative to shares offered",
+            "Yes, it guarantees listing gains"
+          ],
+          "answer": 2,
+          "explanation": "Subscription is a demand measure, not a full assessment of fundamentals or valuation."
         }
       ]
     },
@@ -295,14 +479,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits qib, nii, individual and anchor investors?",
+          "question": "What does category-wise subscription compare?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "A category’s bids with total market capitalisation",
+            "Valid bids in a category with shares offered to that category",
+            "Listing price with face value",
+            "Promoter shares with employee count"
+          ],
+          "answer": 1,
+          "explanation": "Category subscription uses bids and shares reserved for that category."
+        },
+        {
+          "question": "Which is a common IPO investor category?",
+          "options": [
+            "Stock exchange dealers only",
+            "Company suppliers only",
+            "All employees of the registrar",
+            "Qualified Institutional Buyers (QIBs)"
+          ],
+          "answer": 3,
+          "explanation": "QIB, NII and Individual Investor categories are common; exact terms are in issue documents."
+        },
+        {
+          "question": "What can a high category subscription multiple predict with certainty?",
+          "options": [
+            "It cannot predict listing returns with certainty",
+            "A guaranteed listing gain",
+            "A guaranteed allotment to every applicant",
+            "A guaranteed first-day price"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "Category subscription is not a forecast of post-listing performance."
         }
       ]
     },
@@ -329,14 +536,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits lot size, bids, oversubscription and allotment?",
+          "question": "If a lot contains 20 shares at ₹100 each, what is its bid amount?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "₹100",
+            "₹20,000",
+            "₹2,000",
+            "₹120"
           ],
-          "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "answer": 2,
+          "explanation": "One-lot bid amount is lot size multiplied by bid price: 20 × ₹100 = ₹2,000."
+        },
+        {
+          "question": "What does oversubscription mean for a category?",
+          "options": [
+            "Every applicant receives a full allotment",
+            "Valid demand exceeds the shares available in that category",
+            "The issue price must be reduced",
+            "The company has already listed"
+          ],
+          "answer": 1,
+          "explanation": "Oversubscription means demand exceeds the available category allocation."
+        },
+        {
+          "question": "Does oversubscription mean every applicant receives shares?",
+          "options": [
+            "Yes, every applicant gets one lot",
+            "Yes, every UPI mandate is an allotment",
+            "No, because oversubscription cancels the issue",
+            "No. Allotment follows the applicable basis after bidding closes"
+          ],
+          "answer": 3,
+          "explanation": "Oversubscription does not guarantee allotment to every applicant."
         }
       ]
     },
@@ -363,14 +593,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits asba and upi application process?",
+          "question": "What does ASBA stand for?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Application Supported by Blocked Amount",
+            "Automated Securities Buying Arrangement",
+            "Allotment Settlement by Bank Account",
+            "Application Shares Booking Approval"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "ASBA blocks the application amount in the applicant’s bank account."
+        },
+        {
+          "question": "How should an applicant handle a UPI mandate?",
+          "options": [
+            "Share the UPI PIN with the caller",
+            "Approve every IPO collect request",
+            "Check and approve a legitimate mandate in their own UPI app",
+            "Send the OTP to the registrar on WhatsApp"
+          ],
+          "answer": 2,
+          "explanation": "Approve only a mandate you independently recognise through the supported route."
+        },
+        {
+          "question": "What should never be shared with an unsolicited caller or website?",
+          "options": [
+            "The public issue name",
+            "UPI PIN, OTP or banking credentials",
+            "The official RHP link",
+            "The published price band"
+          ],
+          "answer": 1,
+          "explanation": "Do not disclose credentials or approve unknown payment requests."
         }
       ]
     },
@@ -397,14 +650,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits registrar, merchant banker, lead manager and stock exchange?",
+          "question": "What is a registrar’s typical IPO role?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Setting company strategy",
+            "Auditing the issuer’s annual accounts",
+            "Guaranteeing listing gains",
+            "Handling application and allotment-related processes"
+          ],
+          "answer": 3,
+          "explanation": "The registrar handles issue application and allotment work."
+        },
+        {
+          "question": "What is a merchant banker or lead manager’s role?",
+          "options": [
+            "Managing and coordinating the issue as an appointed intermediary",
+            "Approving every retail applicant",
+            "Setting the post-listing share price",
+            "Guaranteeing company performance"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "The offer document identifies appointed intermediaries and their roles."
+        },
+        {
+          "question": "How should you verify that someone represents an IPO intermediary?",
+          "options": [
+            "Trust a logo in a social profile",
+            "Call the number in an unsolicited message",
+            "Check the contact details against the offer document and official register",
+            "Pay a verification fee to the sender"
+          ],
+          "answer": 2,
+          "explanation": "A logo or profile is not proof of authority; verify through official disclosures."
         }
       ]
     },
@@ -431,14 +707,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits gmp, listing gain, listing loss and lock-in?",
+          "question": "What is GMP in the IPO context?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "The official exchange price before listing",
+            "An unofficial market observation outside official exchange disclosures",
+            "A guaranteed allotment premium",
+            "A SEBI-approved listing forecast"
+          ],
+          "answer": 1,
+          "explanation": "GMP is unofficial and not a reliable prediction."
+        },
+        {
+          "question": "An IPO share is issued at ₹100 and lists at ₹110. What is the listing-day price change?",
+          "options": [
+            "5%",
+            "110%",
+            "−10%",
+            "10%"
+          ],
+          "answer": 3,
+          "explanation": "The change is (₹110 − ₹100) ÷ ₹100 × 100 = 10%."
+        },
+        {
+          "question": "What does a lock-in generally do for specified holders?",
+          "options": [
+            "Restricts transfers for a specified period under applicable rules",
+            "Guarantees a minimum share price",
+            "Guarantees that holders will sell",
+            "Prevents the company from publishing results"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "Lock-in rules restrict transfers for specified holders and periods."
         }
       ]
     },
@@ -465,14 +764,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits revenue, ebitda, ebit, pat and eps?",
+          "question": "Which measure is profit after tax?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Revenue",
+            "EBITDA",
+            "PAT",
+            "Gross issue proceeds"
           ],
-          "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "answer": 2,
+          "explanation": "PAT is profit after tax under the stated accounting basis."
+        },
+        {
+          "question": "What does EPS measure?",
+          "options": [
+            "Total company revenue per customer",
+            "Profit attributable to equity holders per share",
+            "Cash held in the bank per employee",
+            "Issue proceeds per promoter"
+          ],
+          "answer": 1,
+          "explanation": "EPS is a per-share earnings measure using the stated share-count basis."
+        },
+        {
+          "question": "Which measure excludes depreciation and amortisation but is before interest and tax?",
+          "options": [
+            "PAT",
+            "EPS",
+            "Net proceeds",
+            "EBITDA"
+          ],
+          "answer": 3,
+          "explanation": "EBITDA is earnings before interest, tax, depreciation and amortisation."
         }
       ]
     },
@@ -499,14 +821,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits p/e, p/b and ev/ebitda?",
+          "question": "How is P/E commonly calculated?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Market capitalisation divided by PAT",
+            "PAT divided by market capitalisation",
+            "Enterprise value divided by revenue",
+            "Book equity divided by shares offered"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "P/E compares market capitalisation with profit after tax."
+        },
+        {
+          "question": "What does EV/EBITDA compare?",
+          "options": [
+            "Issue price with face value",
+            "Revenue with receivables",
+            "Enterprise value with EBITDA",
+            "Fresh issue with OFS"
+          ],
+          "answer": 2,
+          "explanation": "EV/EBITDA is enterprise value divided by EBITDA."
+        },
+        {
+          "question": "Can a low valuation multiple alone prove an IPO is cheap?",
+          "options": [
+            "Yes, lower is always better",
+            "No. Inputs, dates, accounting basis and peer context matter",
+            "Yes, if the issuer has an OFS",
+            "No, because multiples cannot be calculated"
+          ],
+          "answer": 1,
+          "explanation": "A multiple is a comparison measure, not a universal cheap/expensive verdict."
         }
       ]
     },
@@ -533,14 +878,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits roe, roce, debt/equity and interest coverage?",
+          "question": "How is ROE commonly expressed?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Debt divided by revenue",
+            "EBIT divided by issue size",
+            "Interest cost divided by shares offered",
+            "PAT divided by average equity"
+          ],
+          "answer": 3,
+          "explanation": "ROE relates PAT to average shareholders’ equity."
+        },
+        {
+          "question": "What does debt/equity describe?",
+          "options": [
+            "Leverage relative to the company’s equity",
+            "Cash conversion from PAT",
+            "Inventory turnover",
+            "Share-price premium to face value"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "Debt/equity compares total debt with equity."
+        },
+        {
+          "question": "What does interest coverage commonly compare?",
+          "options": [
+            "Revenue with capex",
+            "PAT with shares offered",
+            "EBIT with finance or interest cost",
+            "Market capitalisation with book equity"
+          ],
+          "answer": 2,
+          "explanation": "Interest coverage compares EBIT with interest cost."
         }
       ]
     },
@@ -567,14 +935,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits operating cash flow, free cash flow and working capital?",
+          "question": "What does operating cash flow show?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Only the company’s share-price change",
+            "Cash generated or used by the company’s operations",
+            "The number of shares allotted",
+            "The offer-for-sale amount"
+          ],
+          "answer": 1,
+          "explanation": "Operating cash flow is a cash-flow measure and can differ from accounting profit."
+        },
+        {
+          "question": "How is illustrative free cash flow often calculated?",
+          "options": [
+            "Revenue minus PAT",
+            "Total issue size minus OFS",
+            "Debt divided by equity",
+            "Operating cash flow minus capital expenditure"
+          ],
+          "answer": 3,
+          "explanation": "A common illustrative FCF measure is CFO minus capex."
+        },
+        {
+          "question": "What is working capital commonly calculated as?",
+          "options": [
+            "Current assets minus current liabilities",
+            "Total debt minus PAT",
+            "Market capitalisation minus face value",
+            "Fresh issue minus OFS"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "Working capital is current assets less current liabilities."
         }
       ]
     },
@@ -597,14 +988,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits receivables, inventory and customer concentration?",
+          "question": "What are trade receivables?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Amounts the company owes lenders",
+            "Shares available for allotment",
+            "Amounts customers owe the company",
+            "The issuer’s paid-up share capital"
           ],
-          "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "answer": 2,
+          "explanation": "Receivables are amounts due from customers."
+        },
+        {
+          "question": "What does customer concentration help reveal?",
+          "options": [
+            "The exact future listing price",
+            "Dependence on a small number of customers for revenue",
+            "Whether all employees are promoters",
+            "The allotment probability of a retail bid"
+          ],
+          "answer": 1,
+          "explanation": "Concentration can create dependence on key customers; use disclosed shares and context."
+        },
+        {
+          "question": "When calculating receivable days, which balance is commonly used?",
+          "options": [
+            "Only issued share capital",
+            "Gross IPO proceeds",
+            "Promoter lock-in shares",
+            "Average trade receivables"
+          ],
+          "answer": 3,
+          "explanation": "A common approximation uses average receivables divided by revenue multiplied by 365."
         }
       ]
     },
@@ -627,14 +1041,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits risk factors, contingent liabilities and material litigation?",
+          "question": "What is a contingent liability?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "A potential obligation disclosed subject to relevant conditions or uncertainty",
+            "A guaranteed dividend",
+            "An allotted IPO share",
+            "A confirmed future profit"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "Contingent liabilities describe potential obligations as disclosed."
+        },
+        {
+          "question": "How should an analyst record disclosed litigation?",
+          "options": [
+            "Assume the issuer will lose",
+            "Ignore it if the issue is oversubscribed",
+            "Capture parties, amount if stated, status and exact source reference",
+            "Convert every dispute into a fixed cash outflow"
+          ],
+          "answer": 2,
+          "explanation": "Record disclosed facts and evidence; do not predict the outcome."
+        },
+        {
+          "question": "Does a risk factor mean the event will definitely occur?",
+          "options": [
+            "Yes, every risk must occur",
+            "No. It is a disclosed risk, not a prediction that it will occur",
+            "Yes, the issuer admitted misconduct",
+            "No, risk factors are never relevant"
+          ],
+          "answer": 1,
+          "explanation": "Risk factors identify disclosed risks; they do not say every event is certain."
         }
       ]
     },
@@ -657,14 +1094,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits related-party transactions, promoter holdings and lock-in?",
+          "question": "What is a related-party transaction?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Any purchase by a retail investor",
+            "An exchange-traded share sale",
+            "An IPO application submitted through UPI",
+            "A transaction involving a party connected under applicable definitions"
+          ],
+          "answer": 3,
+          "explanation": "Related-party status is based on applicable definitions and relationships."
+        },
+        {
+          "question": "How is promoter holding percentage commonly calculated?",
+          "options": [
+            "Promoter shares divided by total shares, multiplied by 100",
+            "Total debt divided by PAT",
+            "OFS proceeds divided by revenue",
+            "Current assets divided by current liabilities"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "Promoter holding uses promoter shares and total shares on a consistent date."
+        },
+        {
+          "question": "Does a related-party transaction automatically prove wrongdoing?",
+          "options": [
+            "Yes, every related-party transaction is improper",
+            "Yes, even if disclosed and approved",
+            "No. Inspect terms, approvals, scale and disclosures",
+            "No, related parties cannot transact"
+          ],
+          "answer": 2,
+          "explanation": "Its existence alone is not proof of impropriety; review context and terms."
         }
       ]
     },
@@ -691,14 +1151,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits objects of the issue and use of proceeds?",
+          "question": "What does the Objects of the Issue section explain?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "The guaranteed listing price",
+            "The purposes for which fresh-issue proceeds are proposed to be used",
+            "The allotment status of every applicant",
+            "The promoter’s future price target"
+          ],
+          "answer": 1,
+          "explanation": "The objects section states intended uses and becomes the baseline for tracking."
+        },
+        {
+          "question": "What should be captured for each object?",
+          "options": [
+            "Only an analyst opinion",
+            "Only the company’s market price",
+            "Only the amount of OFS",
+            "Exact wording, allocation, unit, source page and disclosed schedule"
+          ],
+          "answer": 3,
+          "explanation": "A traceable baseline needs wording, amount, unit, page and disclosed timing."
+        },
+        {
+          "question": "Does an intended use of proceeds prove the money has already been spent?",
+          "options": [
+            "No. Intended allocation and reported utilisation are different facts",
+            "Yes, allocation proves completion",
+            "Yes, because the issue has listed",
+            "No, proceeds can never be monitored"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "The original allocation is a baseline; later reports state what was reported as utilised."
         }
       ]
     },
@@ -729,14 +1212,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits sme ipo vs mainboard ipo?",
+          "question": "What should be checked when comparing SME and Mainboard IPOs?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Assume both platforms have identical requirements",
+            "Assume SME rules never change",
+            "The platform rules and eligibility applicable on the issue date",
+            "Compare only the issue price"
           ],
-          "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "answer": 2,
+          "explanation": "Eligibility and obligations can differ; use the rules in force for that issue and date."
+        },
+        {
+          "question": "Does an SME listing automatically mean poor company quality?",
+          "options": [
+            "Yes, all SME issuers are weak",
+            "No. Platform category alone does not establish business quality",
+            "Yes, SME shares cannot trade",
+            "No, SMEs have no disclosure duties"
+          ],
+          "answer": 1,
+          "explanation": "SME classification is not an automatic quality judgement."
+        },
+        {
+          "question": "Does Mainboard listing mean an IPO is low risk?",
+          "options": [
+            "Yes, listing removes business risk",
+            "Yes, all Mainboard IPOs guarantee returns",
+            "No, Mainboard companies cannot have promoters",
+            "No. Mainboard issuers can also have material risks"
+          ],
+          "answer": 3,
+          "explanation": "Platform type does not eliminate issuer-specific risks."
         }
       ]
     },
@@ -763,14 +1269,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits ipo application mistakes and allotment misconceptions?",
+          "question": "A caller promises guaranteed allotment for a fee. What is safest?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Do not pay; verify the application through official channels",
+            "Pay quickly to reserve allotment",
+            "Share your UPI PIN",
+            "Install the caller’s private application"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "No unauthorised person can guarantee allotment; verify through official channels."
+        },
+        {
+          "question": "Which is a safer way to verify an IPO application?",
+          "options": [
+            "Use a link from an unknown group",
+            "Send an OTP to a caller",
+            "Use the official bank, broker, exchange or registrar route",
+            "Approve an unsolicited collect request"
+          ],
+          "answer": 2,
+          "explanation": "Use the documented official process, not unsolicited links or requests."
+        },
+        {
+          "question": "Does a high subscription multiple guarantee individual allotment?",
+          "options": [
+            "Yes, every applicant gets a lot",
+            "No. Allotment follows applicable basis and category rules",
+            "Yes, if an applicant pays a third party",
+            "No, because IPOs have no allotment rules"
+          ],
+          "answer": 1,
+          "explanation": "Oversubscription does not guarantee an individual allotment."
         }
       ]
     },
@@ -801,14 +1330,37 @@
       ],
       "quiz": [
         {
-          "question": "Which approach best fits post-listing tracking and quarterly disclosures?",
+          "question": "What is an important post-listing research task?",
           "options": [
-            "Use official disclosures and show the evidence.",
-            "Assume missing information.",
-            "Use an unsourced social-media claim."
+            "Stop reading disclosures after listing",
+            "Replace issuer filings with social posts",
+            "Assume proceeds were spent on listing day",
+            "Track later filings and proceeds reports against the original offer-document baseline"
+          ],
+          "answer": 3,
+          "explanation": "Post-listing research follows later official disclosures and reported use of proceeds."
+        },
+        {
+          "question": "How should quarter-to-quarter cumulative utilisation be compared?",
+          "options": [
+            "Use comparable definitions and explain revisions that affect figures",
+            "Compare unrelated totals without checking periods",
+            "Treat a decrease as proof of fraud",
+            "Replace missing values with zero"
           ],
           "answer": 0,
-          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+          "explanation": "Quarter movements need consistent periods, definitions and evidence for revisions."
+        },
+        {
+          "question": "If you cannot find a monitoring report in your collection, what should you say?",
+          "options": [
+            "The issuer definitely failed to file",
+            "The money was diverted",
+            "Not found by us as of the review date",
+            "The report never existed"
+          ],
+          "answer": 2,
+          "explanation": "Absence from your collection is not proof of non-filing or misconduct."
         }
       ]
     },
@@ -830,13 +1382,37 @@
       ],
       "quiz": [
         {
-          "question": "Does a monitoring report automatically certify project quality?",
+          "question": "What does a monitoring agency report primarily cover?",
           "options": [
-            "Yes",
-            "No — read the agency's stated scope and caveats"
+            "A complete audit of all project outcomes",
+            "Reported utilisation of issue proceeds within its stated review scope",
+            "A guarantee that a project is completed",
+            "A recommendation to buy shares"
           ],
           "answer": 1,
-          "explanation": "A monitoring report may disclaim judgment on project quality, costs or outcomes."
+          "explanation": "A monitoring report describes utilisation and its stated scope; it is not automatically a full audit."
+        },
+        {
+          "question": "What should you read beside utilisation figures?",
+          "options": [
+            "Only the headline total",
+            "Only the current stock price",
+            "Only the promoter’s interview",
+            "The monitoring agency’s scope, basis and limitations"
+          ],
+          "answer": 3,
+          "explanation": "The report’s source information and disclaimers qualify what the figures support."
+        },
+        {
+          "question": "Can a monitoring report alone prove a project was cost-effective?",
+          "options": [
+            "No, unless the report and other evidence directly support that conclusion",
+            "Yes, every report certifies value",
+            "Yes, if there is no deviation",
+            "No, reports contain no figures"
+          ],
+          "answer": 0,
+          "explanation": "Do not infer success, completion or cost-effectiveness beyond the evidence."
         }
       ],
       "number": 25
@@ -859,14 +1435,37 @@
       ],
       "quiz": [
         {
-          "question": "What must accompany every extracted utilisation amount?",
+          "question": "What is a sensible first step when reading a monitoring report?",
           "options": [
-            "Document and page reference",
-            "A chart colour",
-            "An estimated completion date"
+            "Start with current share price",
+            "Assume every object has the same allocation",
+            "Identify the issuer and reporting period",
+            "Skip the offer-document baseline"
           ],
-          "answer": 0,
-          "explanation": "Traceability requires the original report and exact page."
+          "answer": 2,
+          "explanation": "Start with issuer and quarter, then map objects, utilisation, balances and comments."
+        },
+        {
+          "question": "How is quarter movement in cumulative utilisation calculated?",
+          "options": [
+            "Previous utilisation minus offer price",
+            "Current cumulative utilisation minus previous cumulative utilisation",
+            "Gross issue minus OFS",
+            "Current share price minus face value"
+          ],
+          "answer": 1,
+          "explanation": "Quarter movement is the difference between comparable cumulative utilisation snapshots."
+        },
+        {
+          "question": "What should accompany each extracted utilisation figure?",
+          "options": [
+            "A predicted completion date",
+            "A chart colour",
+            "An analyst’s unsupported estimate",
+            "Its report and exact page reference"
+          ],
+          "answer": 3,
+          "explanation": "A figure must be traceable to the original report and printed page."
         }
       ],
       "number": 26
@@ -889,13 +1488,37 @@
       ],
       "quiz": [
         {
-          "question": "The RHP gives no deployment timeline. What should deployment timeline show?",
+          "question": "Does “no deviation” automatically mean an object is on schedule?",
+          "options": [
+            "No. Deviation and schedule progress are different questions",
+            "Yes, it proves timely completion",
+            "Yes, if funds remain unspent",
+            "No, schedules are never disclosed"
+          ],
+          "answer": 0,
+          "explanation": "No reported deviation does not automatically establish timely deployment or completion."
+        },
+        {
+          "question": "What is the correct schedule status when no deployment timeline is disclosed?",
           "options": [
             "Behind schedule",
-            "No schedule disclosed"
+            "Ahead of schedule",
+            "No schedule disclosed",
+            "On schedule"
+          ],
+          "answer": 2,
+          "explanation": "Without a disclosed timeline there is no basis for an ahead/on-time/behind verdict."
+        },
+        {
+          "question": "When may an analyst assign an ahead/on-time/behind status?",
+          "options": [
+            "Whenever an interim report exists",
+            "When reported actuals can be compared with a disclosed dated milestone",
+            "Whenever there is no deviation",
+            "Whenever the share price rises"
           ],
           "answer": 1,
-          "explanation": "Without a disclosed schedule there is no basis for ahead/on-time/behind classification."
+          "explanation": "Schedule status requires a report and comparable disclosed schedule."
         }
       ],
       "number": 27

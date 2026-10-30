@@ -5,49 +5,203 @@
       "claim": "“Pay a fee and your allotment is guaranteed.”",
       "reality": "Allotment follows the published process; no unauthorised person can guarantee it.",
       "action": "Do not pay the sender. Verify your application through official channels.",
-      "scenario_type": "Investor-protection learning pattern; practice version is fictional"
+      "scenario_type": "Investor-protection learning pattern; practice version is fictional",
+      "challenge": {
+        "options": [
+          [
+            "pay",
+            "Pay the sender to reserve an allotment"
+          ],
+          [
+            "verify",
+            "Do not pay; verify through official channels"
+          ],
+          [
+            "pin",
+            "Share the UPI PIN to confirm identity"
+          ],
+          [
+            "install",
+            "Install the sender’s private app"
+          ]
+        ],
+        "correct": "verify",
+        "explanation": "No unauthorised person can guarantee allotment. Use official bank, broker, registrar or exchange processes."
+      }
     },
     {
       "title": "Discounted IPO shares through a private app",
       "claim": "“Get IPO shares below issue price through our special app.”",
       "reality": "A private app or message is not an official IPO application route.",
       "action": "Do not install unknown apps or transfer money to third parties.",
-      "scenario_type": "Investor-protection learning pattern; practice version is fictional"
+      "scenario_type": "Investor-protection learning pattern; practice version is fictional",
+      "challenge": {
+        "options": [
+          [
+            "app",
+            "Install the private app and transfer funds"
+          ],
+          [
+            "download",
+            "Download the sender’s APK to unlock the discount"
+          ],
+          [
+            "official",
+            "Reject the private offer and check official application routes"
+          ],
+          [
+            "upi",
+            "Pay the seller directly through UPI"
+          ]
+        ],
+        "correct": "official",
+        "explanation": "A private app or message is not an official IPO application route. Do not install unknown software or pay third parties."
+      }
     },
     {
       "title": "Fake institutional / anchor account access",
       "claim": "“Retail users can access a secret institutional IPO account.”",
       "reality": "Eligibility and allocation categories are governed by rules and offer documents; a message cannot grant a category.",
       "action": "Verify category details in the RHP and official regulatory sources.",
-      "scenario_type": "Investor-protection learning pattern; practice version is fictional"
+      "scenario_type": "Investor-protection learning pattern; practice version is fictional",
+      "challenge": {
+        "options": [
+          [
+            "category",
+            "Check category eligibility in the RHP and official rules"
+          ],
+          [
+            "pay",
+            "Pay for access to the secret account"
+          ],
+          [
+            "credential",
+            "Share banking credentials with the agent"
+          ],
+          [
+            "trust",
+            "Trust the claim without checking"
+          ]
+        ],
+        "correct": "category",
+        "explanation": "Investor categories and allocation rules are disclosed. A message cannot grant a category or institutional account."
+      }
     },
     {
       "title": "WhatsApp / Telegram sure-shot tips",
       "claim": "“Join our VIP group for guaranteed listing gains.”",
       "reality": "A guarantee is not evidence. Check registration; a chat group is not an official disclosure source.",
       "action": "Do not send money or credentials. Verify with SEBI.",
-      "scenario_type": "Investor-protection learning pattern; practice version is fictional"
+      "scenario_type": "Investor-protection learning pattern; practice version is fictional",
+      "challenge": {
+        "options": [
+          [
+            "fee",
+            "Pay for a guaranteed listing call"
+          ],
+          [
+            "credential",
+            "Share broker credentials for VIP access"
+          ],
+          [
+            "forward",
+            "Forward the message as verified information"
+          ],
+          [
+            "verify",
+            "Do not pay or share credentials; independently verify disclosures"
+          ]
+        ],
+        "correct": "verify",
+        "explanation": "A chat group is not an official disclosure source. Verify the intermediary independently."
+      }
     },
     {
       "title": "Fake allotment link / UPI mandate",
       "claim": "“Approve this UPI request or pay to release your allotment.”",
       "reality": "Use the official bank / broker / registrar process. Do not approve unknown collect requests or share PIN/OTP.",
       "action": "Stop and verify directly through your bank app and official intermediary.",
-      "scenario_type": "Investor-protection learning pattern; practice version is fictional"
+      "scenario_type": "Investor-protection learning pattern; practice version is fictional",
+      "challenge": {
+        "options": [
+          [
+            "approve",
+            "Approve the request because it mentions an IPO"
+          ],
+          [
+            "verify",
+            "Check the mandate in your own UPI app and use the official route"
+          ],
+          [
+            "share",
+            "Share the UPI PIN with the caller"
+          ],
+          [
+            "pay",
+            "Transfer money to release allotment"
+          ]
+        ],
+        "correct": "verify",
+        "explanation": "Only approve a mandate you recognise and independently checked. Never share a UPI PIN or OTP."
+      }
     },
     {
       "title": "Fake GMP screenshot",
       "claim": "“This screenshot proves a guaranteed listing premium.”",
       "reality": "GMP is unofficial; sources can differ and timestamps matter.",
       "action": "Do not treat it as an exchange price or prediction.",
-      "scenario_type": "Investor-protection learning pattern; practice version is fictional"
+      "scenario_type": "Investor-protection learning pattern; practice version is fictional",
+      "challenge": {
+        "options": [
+          [
+            "guarantee",
+            "Treat the screenshot as a guaranteed premium"
+          ],
+          [
+            "forward",
+            "Forward it without checking date or source"
+          ],
+          [
+            "dismiss",
+            "Treat GMP as unofficial, not an exchange price or guarantee"
+          ],
+          [
+            "pay",
+            "Pay for a verified prediction"
+          ]
+        ],
+        "correct": "dismiss",
+        "explanation": "GMP is unofficial and sources can differ. It is not an exchange price or reliable listing prediction."
+      }
     },
     {
       "title": "Pressure and FOMO",
       "claim": "“Last five minutes — transfer now or lose guaranteed profits.”",
       "reality": "Pressure does not create a legitimate route or guarantee returns.",
       "action": "Pause and verify issue details on official pages.",
-      "scenario_type": "Investor-protection learning pattern; practice version is fictional"
+      "scenario_type": "Investor-protection learning pattern; practice version is fictional",
+      "challenge": {
+        "options": [
+          [
+            "transfer",
+            "Transfer immediately because time is running out"
+          ],
+          [
+            "share",
+            "Share OTP and UPI PIN"
+          ],
+          [
+            "install",
+            "Install the sender’s app before the offer expires"
+          ],
+          [
+            "pause",
+            "Pause and verify the issue through official sources"
+          ]
+        ],
+        "correct": "pause",
+        "explanation": "Pressure does not create a legitimate payment route or guarantee. Stop and verify before acting."
+      }
     }
   ],
   "official_help": [

@@ -57,7 +57,7 @@
         {
           "id": "fresh-issue",
           "label": "Fresh issue gross proceeds",
-          "value": 400.0,
+          "value": 400,
           "unit": "INR_crore",
           "evidence": {
             "document_id": "prospectus",
@@ -97,7 +97,7 @@
         {
           "id": "first-report-utilisation",
           "label": "Cumulative utilisation reported in first monitoring report",
-          "value": 10.0,
+          "value": 10,
           "unit": "INR_crore",
           "evidence": {
             "document_id": "monitor-q2-fy25",
@@ -117,7 +117,7 @@
       ],
       "money_flow": {
         "gross_proceeds_inr_crore": 492.88,
-        "fresh_issue_inr_crore": 400.0,
+        "fresh_issue_inr_crore": 400,
         "ofs_inr_crore": 92.88,
         "net_proceeds_inr_crore": 362.938,
         "evidence": {
@@ -155,7 +155,7 @@
               "filing_date": "2024-11-14",
               "document_id": "monitor-q2-fy25",
               "utilisation": {
-                "cumulative_used_inr": 0.0,
+                "cumulative_used_inr": 0,
                 "unspent_inr": 163.5,
                 "unit": "INR_crore",
                 "evidence": {
@@ -219,7 +219,7 @@
               "filing_date": "2024-11-14",
               "document_id": "monitor-q2-fy25",
               "utilisation": {
-                "cumulative_used_inr": 0.0,
+                "cumulative_used_inr": 0,
                 "unspent_inr": 151.71,
                 "unit": "INR_crore",
                 "evidence": {
@@ -265,7 +265,7 @@
               "filing_date": "2024-11-14",
               "document_id": "monitor-q2-fy25",
               "utilisation": {
-                "cumulative_used_inr": 10.0,
+                "cumulative_used_inr": 10,
                 "unspent_inr": 37.728,
                 "unit": "INR_crore",
                 "evidence": {
@@ -289,10 +289,10 @@
           "name": "Rajendra Sethia",
           "type": "Promoter Selling Shareholder",
           "shares_offered": 5400000,
-          "waca": 5.0,
+          "waca": 5,
           "waca_basis": "As certified by Abhijit Dutt & Associates, Chartered Accountants, certificate dated 20 September 2024; prospectus p. 1.",
           "issue_price_waca_multiple": 34.4,
-          "multiple_caveat": "Issue price ₹172 divided by WACA ₹5; the prospectus states the offer price was 34.40 times face value, but this is a separate metric. WACA multiple is a simple derived ratio and should be labelled as such.",
+          "multiple_caveat": "The issue price is ₹172 and the disclosed WACA is ₹5, so the derived issue-price/WACA multiple is 34.40x. The prospectus also states 34.40x face value; these multiples are numerically identical because WACA and face value are both ₹5, although their calculation bases differ.",
           "evidence": {
             "document_id": "prospectus",
             "page": 1
@@ -306,7 +306,21 @@
         "The FY2025 deployment schedule is annual. The first monitoring report is an interim snapshot, so no ahead/on-schedule/behind classification is assigned from this report alone.",
         "The monitoring report states it relies on information supplied by issuer management and third parties and that it does not perform an audit or independent verification. See report printed page 10.",
         "Original RHP PDF page-level cross-check remains pending. The allocation values currently cite the issuer-hosted final prospectus, with the monitoring report also reproducing the offer-document values."
-      ]
+      ],
+      "monitoring_agency_scope": {
+        "text": "CRISIL states that it relied on information from issuer management and third parties, did not perform an audit and undertook no independent verification of information it received.",
+        "evidence": {
+          "document_id": "monitor-q2-fy25",
+          "page": 10
+        }
+      },
+      "monitoring_agency_declaration": {
+        "text": "The report's earlier declaration also states that CRISIL did not perform an audit or independently verify information and statements it received.",
+        "evidence": {
+          "document_id": "monitor-q2-fy25",
+          "page": 4
+        }
+      }
     }
   ],
   "notice": "No real issuer-level facts are published until offer documents and page references are manually verified."
