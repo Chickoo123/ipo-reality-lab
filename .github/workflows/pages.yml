@@ -26,8 +26,9 @@ jobs:
       - name: Prepare deployment site
         run: |
           mkdir -p _site/data
-          cp index.html app.js styles.css .nojekyll _site/
+          cp index.html app.js logic.js styles.css .nojekyll _site/
           cp data/academy.json data/cases.json data/checklist.json data/ipo_records.json data/regulatory_policy.json data/scams.json data/source_registry.json _site/data/
+          printf '{"build_date":"%s"}\n' "$(date -u +%F)" > _site/data/build-info.json
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
