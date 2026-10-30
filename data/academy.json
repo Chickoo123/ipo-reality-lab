@@ -142,9 +142,9 @@
       "title": "DRHP, RHP and final prospectus",
       "priority": "Essential",
       "plain": "These are different stages of an IPO offer document. The exact dated version matters; do not assume the first draft contains final issue terms.",
-      "example": "An issuer may change its issue size, seller list or object allocations between the DRHP and RHP. K4 records the visible differences and cites both pages.",
+      "example": "An issuer may change its issue size, seller list or object allocations between the DRHP and RHP. document comparison records the visible differences and cites both pages.",
       "diagram": "DRHP (draft) → RHP (closer to issue) → final prospectus (final offer terms).",
-      "formula": "K4 field change = later disclosed value − earlier disclosed value, only where values are comparable.",
+      "formula": "document comparison field change = later disclosed value − earlier disclosed value, only where values are comparable.",
       "can_infer": "A difference between documents is a factual change in disclosure.",
       "cannot_infer": "The difference alone does not establish why it changed or prove misconduct.",
       "sources": [
@@ -889,7 +889,7 @@
       ],
       "quiz": [
         {
-          "question": "The RHP gives no deployment timeline. What should K2 show?",
+          "question": "The RHP gives no deployment timeline. What should deployment timeline show?",
           "options": [
             "Behind schedule",
             "No schedule disclosed"

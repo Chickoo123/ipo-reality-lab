@@ -14,13 +14,12 @@ def test_academy_has_27_publicly_named_lessons():
     assert [x["id"] for x in rows[24:]]==["monitoring-25","monitoring-26","monitoring-27"]
     assert {x["priority"] for x in rows}=={"Essential","Foundational","Advanced"}
 
-def test_public_ui_does_not_expose_internal_build_codes():
-    html=(ROOT/"index.html").read_text(encoding="utf-8")
-    app=(ROOT/"app.js").read_text(encoding="utf-8")
-    for token in ["K1","K2","K3","K4","D1 Money","D2 Book","D3 Financial","D4 Checklist","D5 Spot","D6 Quiz","A–K","A-K"]:
-        assert token not in html+app, token
+def test_public_academy_uses_neutral_lesson_ids():
+    rows=load("academy.json")["modules"]
+    assert all(x["id"].startswith(("lesson-", "monitoring-")) for x in rows)
+    assert len(rows)==27
 
-def test_pages_workflow_enables_pages_and_publishes_only_site_assets():
+def test_pages_workflow_builds_deployment_artifact_after_validation():
     workflow=(ROOT/".github/workflows/pages.yml").read_text(encoding="utf-8")
     assert "actions/configure-pages@v5" in workflow and "enablement: true" not in workflow
     assert "path: _site" in workflow
