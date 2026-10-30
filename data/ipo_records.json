@@ -1,0 +1,313 @@
+{
+  "schema_version": "1.0.0",
+  "last_reviewed": "2026-10-30",
+  "records": [
+    {
+      "id": "western-carriers-2024",
+      "company_name": "Western Carriers (India) Limited",
+      "board": "mainboard",
+      "issue_status": "listed",
+      "issue_dates": {
+        "open": "2024-09-13",
+        "close": "2024-09-19"
+      },
+      "last_checked": "2026-10-30",
+      "research_status": "Initial evidence-backed example. Prospectus and first monitoring report checked; original RHP page-level cross-check remains pending.",
+      "baseline_validation_status": "prospectus_verified_rhp_page_review_pending",
+      "documents": [
+        {
+          "id": "prospectus",
+          "type": "Prospectus",
+          "date": "2024-09-20",
+          "source_id": "ISSUER",
+          "url": "https://western-carriers.com/assets/images/pdf/Western-Carriers-%28India%29-Limited-Prospectus-%28Filing%29.pdf",
+          "title": "Western Carriers (India) Limited — Prospectus",
+          "notes": "Official issuer-hosted PDF. Issue structure on printed page 1; Objects of the Offer and schedule on printed pages 98–100."
+        },
+        {
+          "id": "rhp",
+          "type": "RHP",
+          "date": "2024-09-07",
+          "source_id": "SEBI",
+          "url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2024/1726202843862.pdf",
+          "title": "Western Carriers (India) Limited — RHP",
+          "notes": "SEBI filing link identified. Direct PDF page review was not completed in this build due source-access timeout; do not treat this as RHP page-level verification."
+        },
+        {
+          "id": "monitor-q2-fy25",
+          "type": "MonitoringAgencyReport",
+          "date": "2024-11-14",
+          "source_id": "NSE",
+          "url": "https://nsearchives.nseindia.com/corporate/WCIL_14112024195404_WCIL_MONITORING_AGENCY_REPORT.pdf",
+          "title": "CRISIL Monitoring Agency Report — Quarter ended 30 September 2024",
+          "notes": "NSE-hosted report. Reported issue details and object utilisation were checked on printed pages 4–8; report disclaimer on printed page 10."
+        }
+      ],
+      "figures": [
+        {
+          "id": "total-issue",
+          "label": "Total IPO issue size",
+          "value": 492.88,
+          "unit": "INR_crore",
+          "evidence": {
+            "document_id": "prospectus",
+            "page": 1
+          }
+        },
+        {
+          "id": "fresh-issue",
+          "label": "Fresh issue gross proceeds",
+          "value": 400.0,
+          "unit": "INR_crore",
+          "evidence": {
+            "document_id": "prospectus",
+            "page": 1
+          }
+        },
+        {
+          "id": "ofs",
+          "label": "Offer for Sale",
+          "value": 92.88,
+          "unit": "INR_crore",
+          "evidence": {
+            "document_id": "prospectus",
+            "page": 1
+          }
+        },
+        {
+          "id": "issue-price",
+          "label": "Offer price per share",
+          "value": 172,
+          "unit": "INR_per_share",
+          "evidence": {
+            "document_id": "prospectus",
+            "page": 1
+          }
+        },
+        {
+          "id": "net-proceeds",
+          "label": "Net proceeds from fresh issue",
+          "value": 362.938,
+          "unit": "INR_crore",
+          "evidence": {
+            "document_id": "prospectus",
+            "page": 100
+          }
+        },
+        {
+          "id": "first-report-utilisation",
+          "label": "Cumulative utilisation reported in first monitoring report",
+          "value": 10.0,
+          "unit": "INR_crore",
+          "evidence": {
+            "document_id": "monitor-q2-fy25",
+            "page": 7
+          }
+        },
+        {
+          "id": "first-report-unutilised",
+          "label": "Unutilised net proceeds reported in first monitoring report",
+          "value": 352.938,
+          "unit": "INR_crore",
+          "evidence": {
+            "document_id": "monitor-q2-fy25",
+            "page": 7
+          }
+        }
+      ],
+      "money_flow": {
+        "gross_proceeds_inr_crore": 492.88,
+        "fresh_issue_inr_crore": 400.0,
+        "ofs_inr_crore": 92.88,
+        "net_proceeds_inr_crore": 362.938,
+        "evidence": {
+          "document_id": "prospectus",
+          "page": 1
+        },
+        "notes": "Fresh issue gross proceeds less offer-related expenses equal net proceeds. OFS proceeds accrue to the promoter selling shareholder, not the issuer."
+      },
+      "objects_of_issue": [
+        {
+          "id": "debt-repayment",
+          "name": "Prepayment or scheduled re-payment of a portion of certain outstanding borrowings availed by the Company",
+          "unit": "INR_crore",
+          "baseline_document_id": "prospectus",
+          "baseline_page": 100,
+          "schedule": {
+            "status": "disclosed",
+            "milestones": [
+              {
+                "period": "FY2025",
+                "planned_cumulative_inr": 163.5,
+                "unit": "INR_crore",
+                "evidence": {
+                  "document_id": "prospectus",
+                  "page": 100
+                }
+              }
+            ]
+          },
+          "revisions": [],
+          "reports": [
+            {
+              "quarter": "2024-Q3",
+              "reporting_period_end": "2024-09-30",
+              "filing_date": "2024-11-14",
+              "document_id": "monitor-q2-fy25",
+              "utilisation": {
+                "cumulative_used_inr": 0.0,
+                "unspent_inr": 163.5,
+                "unit": "INR_crore",
+                "evidence": {
+                  "document_id": "monitor-q2-fy25",
+                  "page": 7
+                }
+              },
+              "deviation": {
+                "status": "not_reported_in_first_snapshot",
+                "note": "The report records no comments by the Monitoring Agency or Board for this object. This is the first report in this dataset; no previous-report comparison is available."
+              },
+              "agency_comments": "No comments",
+              "board_comments": "No comments"
+            }
+          ],
+          "baseline_allocation_inr": 163.5
+        },
+        {
+          "id": "capital-expenditure",
+          "name": "Funding of capital expenditure requirements towards purchase of commercial vehicles, specialised containers and reach stackers",
+          "unit": "INR_crore",
+          "baseline_document_id": "prospectus",
+          "baseline_page": 100,
+          "schedule": {
+            "status": "disclosed",
+            "milestones": [
+              {
+                "period": "FY2025",
+                "planned_cumulative_inr": 50.57,
+                "unit": "INR_crore",
+                "evidence": {
+                  "document_id": "prospectus",
+                  "page": 100
+                }
+              },
+              {
+                "period": "FY2026",
+                "planned_cumulative_inr": 101.14,
+                "unit": "INR_crore",
+                "evidence": {
+                  "document_id": "prospectus",
+                  "page": 100
+                }
+              },
+              {
+                "period": "FY2027",
+                "planned_cumulative_inr": 151.71,
+                "unit": "INR_crore",
+                "evidence": {
+                  "document_id": "prospectus",
+                  "page": 100
+                }
+              }
+            ]
+          },
+          "revisions": [],
+          "reports": [
+            {
+              "quarter": "2024-Q3",
+              "reporting_period_end": "2024-09-30",
+              "filing_date": "2024-11-14",
+              "document_id": "monitor-q2-fy25",
+              "utilisation": {
+                "cumulative_used_inr": 0.0,
+                "unspent_inr": 151.71,
+                "unit": "INR_crore",
+                "evidence": {
+                  "document_id": "monitor-q2-fy25",
+                  "page": 7
+                }
+              },
+              "deviation": {
+                "status": "not_reported_in_first_snapshot",
+                "note": "The report records no comments by the Monitoring Agency or Board for this object. This is the first report in this dataset; no previous-report comparison is available."
+              },
+              "agency_comments": "No comments",
+              "board_comments": "No comments"
+            }
+          ],
+          "baseline_allocation_inr": 151.71
+        },
+        {
+          "id": "general-corporate-purposes",
+          "name": "General corporate purposes",
+          "unit": "INR_crore",
+          "baseline_document_id": "prospectus",
+          "baseline_page": 100,
+          "schedule": {
+            "status": "disclosed",
+            "milestones": [
+              {
+                "period": "FY2025",
+                "planned_cumulative_inr": 47.728,
+                "unit": "INR_crore",
+                "evidence": {
+                  "document_id": "prospectus",
+                  "page": 100
+                }
+              }
+            ]
+          },
+          "revisions": [],
+          "reports": [
+            {
+              "quarter": "2024-Q3",
+              "reporting_period_end": "2024-09-30",
+              "filing_date": "2024-11-14",
+              "document_id": "monitor-q2-fy25",
+              "utilisation": {
+                "cumulative_used_inr": 10.0,
+                "unspent_inr": 37.728,
+                "unit": "INR_crore",
+                "evidence": {
+                  "document_id": "monitor-q2-fy25",
+                  "page": 7
+                }
+              },
+              "deviation": {
+                "status": "not_reported_in_first_snapshot",
+                "note": "The report describes ₹10.00 crore utilisation under general corporate purposes and reports no comments by the Monitoring Agency or Board in the utilisation table."
+              },
+              "agency_comments": "No comments",
+              "board_comments": "No comments"
+            }
+          ],
+          "baseline_allocation_inr": 47.728
+        }
+      ],
+      "sellers": [
+        {
+          "name": "Rajendra Sethia",
+          "type": "Promoter Selling Shareholder",
+          "shares_offered": 5400000,
+          "waca": 5.0,
+          "waca_basis": "As certified by Abhijit Dutt & Associates, Chartered Accountants, certificate dated 20 September 2024; prospectus p. 1.",
+          "issue_price_waca_multiple": 34.4,
+          "multiple_caveat": "Issue price ₹172 divided by WACA ₹5; the prospectus states the offer price was 34.40 times face value, but this is a separate metric. WACA multiple is a simple derived ratio and should be labelled as such.",
+          "evidence": {
+            "document_id": "prospectus",
+            "page": 1
+          }
+        }
+      ],
+      "document_changes": [],
+      "research_notes": [
+        "The figures are recorded in the units shown by the source and converted from ₹ million to ₹ crore by dividing by 10.",
+        "The first monitoring report covers the quarter ended 30 September 2024 and was filed on 14 November 2024.",
+        "The FY2025 deployment schedule is annual. The first monitoring report is an interim snapshot, so no ahead/on-schedule/behind classification is assigned from this report alone.",
+        "The monitoring report states it relies on information supplied by issuer management and third parties and that it does not perform an audit or independent verification. See report printed page 10.",
+        "Original RHP PDF page-level cross-check remains pending. The allocation values currently cite the issuer-hosted final prospectus, with the monitoring report also reproducing the offer-document values."
+      ]
+    }
+  ],
+  "notice": "No real issuer-level facts are published until offer documents and page references are manually verified."
+}

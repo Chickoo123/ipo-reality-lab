@@ -1,0 +1,928 @@
+{
+  "modules": [
+    {
+      "id": "C1",
+      "number": 1,
+      "title": "What is an IPO?",
+      "priority": "P1",
+      "plain": "An Initial Public Offering (IPO) is when a company offers shares to public investors and seeks admission of those shares to trading on a stock exchange.",
+      "example": "Imagine a growing Indian food manufacturer wants to raise capital and let public investors become shareholders. It prepares offer documents, conducts the issue and completes listing.",
+      "diagram": "Company prepares offer documents → issue opens → investors bid/apply → allotment → listing.",
+      "formula": "No universal formula. The issue structure determines how proceeds are split between a fresh issue and an Offer for Sale.",
+      "can_infer": "You can understand the disclosed issue process and ownership transition.",
+      "cannot_infer": "An IPO does not guarantee profitability, strong governance, liquidity or a rising share price.",
+      "sources": [
+        {
+          "name": "SEBI Investor Education",
+          "url": "https://investor.sebi.gov.in/"
+        },
+        {
+          "name": "SEBI Public Issues",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits what is an ipo??",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "number": 2,
+      "title": "Why do companies go public?",
+      "priority": "P1",
+      "plain": "Companies may go public to raise new capital, provide an exit to some existing shareholders, improve visibility or create a market for their shares.",
+      "example": "A manufacturer may use a fresh issue to fund a new plant. A founder or early investor may also sell part of their stake through an OFS.",
+      "diagram": "Fresh issue → proceeds to company. OFS → proceeds to selling shareholders.",
+      "formula": "Fresh-issue share % = fresh issue ÷ total issue × 100. OFS share % = OFS ÷ total issue × 100.",
+      "can_infer": "The offer document explains the issuer's stated purpose and the offer structure.",
+      "cannot_infer": "You cannot infer the seller's motivation or future company performance from the OFS split alone.",
+      "sources": [
+        {
+          "name": "SEBI Guide to Offer Documents",
+          "url": "https://www.sebi.gov.in/sebi_data/docfiles/20612_t.html"
+        },
+        {
+          "name": "NSE Offer Documents",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-offer-documents"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits why do companies go public??",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "number": 3,
+      "title": "Private company vs listed company",
+      "priority": "P2",
+      "plain": "A private company generally has a more limited shareholder base and its shares are not publicly traded on an exchange. A listed company has shares admitted to trading and continuing disclosure obligations.",
+      "example": "A family-owned business may have a small shareholder group. After listing, public shareholders can trade its shares subject to exchange rules.",
+      "diagram": "Private ownership → IPO process → listed company with public shareholders and continuing disclosures.",
+      "formula": "No common formula. Compare ownership, disclosure duties, liquidity and governance obligations.",
+      "can_infer": "You can identify the structural differences and new disclosure responsibilities.",
+      "cannot_infer": "Listing does not guarantee high liquidity, good governance or strong operating performance.",
+      "sources": [
+        {
+          "name": "SEBI Investor Education",
+          "url": "https://investor.sebi.gov.in/"
+        },
+        {
+          "name": "NSE",
+          "url": "https://www.nseindia.com/"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits private company vs listed company?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "number": 4,
+      "title": "How an IPO works in India: DRHP to listing",
+      "priority": "P1",
+      "plain": "The process generally moves through draft disclosure, regulatory review, updated offer documents, issue bidding, allotment and listing. Always check the dates and steps for the specific issue.",
+      "example": "A hypothetical issuer files a DRHP, updates its disclosures, files an RHP, opens the issue, completes allotment and lists on the exchange.",
+      "diagram": "DRHP → regulatory review / updates → RHP → issue opens and closes → basis of allotment → listing.",
+      "formula": "Use the actual dates in the issuer's offer document and official exchange notices.",
+      "can_infer": "You can map the disclosed steps and dates for a particular issue.",
+      "cannot_infer": "A draft filing or regulatory observation is not a guarantee that an issue will open on a particular date.",
+      "sources": [
+        {
+          "name": "SEBI Public Issues",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        },
+        {
+          "name": "NSE Offer Documents",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-offer-documents"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits how an ipo works in india: drhp to listing?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "number": 5,
+      "title": "DRHP, RHP and final prospectus",
+      "priority": "P0",
+      "plain": "These are different stages of an IPO offer document. The exact dated version matters; do not assume the first draft contains final issue terms.",
+      "example": "An issuer may change its issue size, seller list or object allocations between the DRHP and RHP. K4 records the visible differences and cites both pages.",
+      "diagram": "DRHP (draft) → RHP (closer to issue) → final prospectus (final offer terms).",
+      "formula": "K4 field change = later disclosed value − earlier disclosed value, only where values are comparable.",
+      "can_infer": "A difference between documents is a factual change in disclosure.",
+      "cannot_infer": "The difference alone does not establish why it changed or prove misconduct.",
+      "sources": [
+        {
+          "name": "SEBI Guide to Offer Documents",
+          "url": "https://www.sebi.gov.in/sebi_data/docfiles/20612_t.html"
+        },
+        {
+          "name": "SEBI Public Issues",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits drhp, rhp and final prospectus?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "number": 6,
+      "title": "Fresh issue vs OFS",
+      "priority": "P0",
+      "plain": "In a fresh issue, the company issues new shares and raises funds. In an OFS, existing shareholders sell shares and receive the proceeds.",
+      "example": "A hypothetical ₹100 crore issue might contain ₹70 crore fresh issue and ₹30 crore OFS. The company receives the fresh-issue proceeds; the selling holders receive the OFS proceeds.",
+      "diagram": "Total issue → fresh issue (issuer) + OFS (selling holders).",
+      "formula": "Fresh issue % = fresh issue ÷ total issue × 100. OFS % = OFS ÷ total issue × 100.",
+      "can_infer": "The RHP identifies the disclosed split and the selling shareholders.",
+      "cannot_infer": "A large OFS does not by itself prove that a seller has lost confidence in the business.",
+      "sources": [
+        {
+          "name": "NSE Offer Documents",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-offer-documents"
+        },
+        {
+          "name": "SEBI Offer Document Guide",
+          "url": "https://www.sebi.gov.in/sebi_data/docfiles/20612_t.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits fresh issue vs ofs?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "number": 7,
+      "title": "Face value, premium, price band, floor price and issue price",
+      "priority": "P1",
+      "plain": "Face value is a share's nominal value. Issue price is the price paid in the IPO. Premium is the amount above face value. A book-built issue may publish a price band with a floor and cap.",
+      "example": "If face value is ₹2 and issue price is ₹100, the premium is ₹98. A ₹90–₹100 band has a ₹90 floor and ₹100 cap.",
+      "diagram": "Face value + premium = issue price. Price band = floor price to cap price.",
+      "formula": "Premium = issue price − face value. Premium % = premium ÷ face value × 100.",
+      "can_infer": "You can read the published price terms and calculate the arithmetic difference.",
+      "cannot_infer": "A premium over face value does not tell you whether a company is fairly valued.",
+      "sources": [
+        {
+          "name": "SEBI Investor Education",
+          "url": "https://investor.sebi.gov.in/"
+        },
+        {
+          "name": "NSE Offer Documents",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-offer-documents"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits face value, premium, price band, floor price and issue price?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "number": 8,
+      "title": "Book building and cut-off price",
+      "priority": "P1",
+      "plain": "Book building is a price-discovery process in which investors bid within the announced price band. The final price is determined under the applicable issue process after bids are received.",
+      "example": "In a hypothetical ₹90–₹100 band, bids at different prices form a demand schedule. This is not the same as an exchange-traded order book after listing.",
+      "diagram": "Price band → bids across prices / cut-off bids → demand schedule → final issue price.",
+      "formula": "Subscription multiple = valid demand shares ÷ shares offered in that category.",
+      "can_infer": "You can understand how bid prices and demand contribute to price discovery.",
+      "cannot_infer": "Oversubscription alone does not prove that the company is strong or correctly priced.",
+      "sources": [
+        {
+          "name": "SEBI Investor Education",
+          "url": "https://investor.sebi.gov.in/"
+        },
+        {
+          "name": "NSE IPO information",
+          "url": "https://www.nseindia.com/"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits book building and cut-off price?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "number": 9,
+      "title": "QIB, NII, Individual and Anchor investors",
+      "priority": "P1",
+      "plain": "IPO categories divide bids into investor groups under applicable issue rules. Read the exact category names, reservation and allocation rules in the RHP and final exchange data.",
+      "example": "A hypothetical issue may report demand separately for QIB, NII and Individual Investor categories. Use the specific terminology in the issue documents.",
+      "diagram": "Investor application → category allocation → final subscription and allotment data.",
+      "formula": "Category subscription = valid bids in category ÷ shares offered to that category.",
+      "can_infer": "You can compare category-wise demand after the issue closes.",
+      "cannot_infer": "A category's subscription multiple is not a forecast of listing returns.",
+      "sources": [
+        {
+          "name": "SEBI",
+          "url": "https://www.sebi.gov.in/"
+        },
+        {
+          "name": "NSE Offer Documents",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-offer-documents"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits qib, nii, individual and anchor investors?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "number": 10,
+      "title": "Lot size, bids, oversubscription and allotment",
+      "priority": "P1",
+      "plain": "A lot is the minimum bid quantity specified for the issue. Oversubscription means valid demand exceeds shares available in a category. Allotment follows the applicable basis after bidding closes.",
+      "example": "If lot size is 20 shares and the bid price is ₹100, one lot represents ₹2,000 before any other applicable rules.",
+      "diagram": "Bid quantity → category demand → issue closes → basis of allotment → allotment result.",
+      "formula": "One-lot bid amount = lot size × bid price. Subscription multiple = demand ÷ shares offered.",
+      "can_infer": "You can calculate the amount represented by a lot and read category subscription.",
+      "cannot_infer": "Oversubscription does not mean every applicant gets shares.",
+      "sources": [
+        {
+          "name": "NSE IPO Bid Verification",
+          "url": "https://www.nseindia.com/invest/check-trades-bids-verify-ipo-bids"
+        },
+        {
+          "name": "SEBI Public Issues",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits lot size, bids, oversubscription and allotment?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "number": 11,
+      "title": "ASBA and UPI application process",
+      "priority": "P1",
+      "plain": "ASBA means Application Supported by Blocked Amount. Under the process, the application amount is blocked in the investor's bank account. UPI can be an application mechanism where permitted.",
+      "example": "An applicant uses a supported bank or broker interface, checks bid details and approves the mandate in their own UPI app. An unsolicited third-party collect request is not an official route.",
+      "diagram": "Application submitted → funds blocked / mandate → allotment → debit for allotted shares or release of block.",
+      "formula": "No analytical formula. Verify the issue and mandate through the official application route.",
+      "can_infer": "You can recognise the general application flow and spot suspicious payment requests.",
+      "cannot_infer": "Never share a UPI PIN, OTP or banking credential with an unsolicited caller or site.",
+      "sources": [
+        {
+          "name": "NSE IPO Bid Verification",
+          "url": "https://www.nseindia.com/invest/check-trades-bids-verify-ipo-bids"
+        },
+        {
+          "name": "SEBI Investor Education",
+          "url": "https://investor.sebi.gov.in/"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits asba and upi application process?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "number": 12,
+      "title": "Registrar, merchant banker, lead manager and stock exchange",
+      "priority": "P2",
+      "plain": "An IPO involves appointed intermediaries with different roles. Merchant bankers manage the issue, registrars handle application/allotment work, and exchanges provide market infrastructure and disclosures.",
+      "example": "Check the contacts and responsibilities disclosed in the offer document instead of trusting an unsolicited caller who claims to represent an intermediary.",
+      "diagram": "Issuer + merchant banker / lead manager + registrar + stock exchange + banking / depository participants.",
+      "formula": "No common formula. Verify each intermediary against the offer document and relevant official register.",
+      "can_infer": "You can identify which entity is responsible for each stage.",
+      "cannot_infer": "A logo, phone number or social-media profile does not prove that a sender is authorised.",
+      "sources": [
+        {
+          "name": "SEBI Offer Document Guide",
+          "url": "https://www.sebi.gov.in/sebi_data/docfiles/20612_t.html"
+        },
+        {
+          "name": "NSE Offer Documents",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-offer-documents"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits registrar, merchant banker, lead manager and stock exchange?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "number": 13,
+      "title": "GMP, listing gain, listing loss and lock-in",
+      "priority": "P1",
+      "plain": "GMP is an unofficial market observation outside official exchange disclosures. Listing gain/loss compares listing price with issue price. Lock-in rules restrict transfers for specified holders and periods.",
+      "example": "A hypothetical share issued at ₹100 and listed at ₹110 has a 10% listing-day price difference. An unofficial GMP quote is not an exchange price.",
+      "diagram": "Issue price → listing price → dated historical comparison; GMP remains a separate unofficial observation.",
+      "formula": "Listing-day change % = (listing price − issue price) ÷ issue price × 100.",
+      "can_infer": "You can calculate a historical listing-day change from dated, permitted price data.",
+      "cannot_infer": "GMP is unofficial, sources can disagree, and it is not a reliable listing-price prediction. Educational market-price data must pass the applicable SEBI rule.",
+      "sources": [
+        {
+          "name": "SEBI price-data circular",
+          "url": "https://www.sebi.gov.in/web/?file=https%3A%2F%2Fwww.sebi.gov.in%2Fsebi_data%2Fattachdocs%2Fmay-2026%2F1778242522289.pdf"
+        },
+        {
+          "name": "NSE Offer Documents",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-offer-documents"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits gmp, listing gain, listing loss and lock-in?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "number": 14,
+      "title": "Revenue, EBITDA, EBIT, PAT and EPS",
+      "priority": "P1",
+      "plain": "Revenue is income from operations. EBITDA is earnings before interest, tax, depreciation and amortisation. EBIT includes depreciation and amortisation but excludes interest and tax. PAT is profit after tax. EPS is profit attributable to each share under the stated share-count basis.",
+      "example": "A hypothetical manufacturer reports revenue, operating expenses, depreciation, interest and tax. Each measure answers a different question.",
+      "diagram": "Revenue → operating costs → EBITDA → depreciation → EBIT → interest / tax → PAT → EPS.",
+      "formula": "EBITDA margin = EBITDA ÷ revenue × 100. PAT margin = PAT ÷ revenue × 100. EPS = profit attributable to equity holders ÷ weighted average shares.",
+      "can_infer": "You can calculate margins and per-share figures from disclosed inputs.",
+      "cannot_infer": "Positive PAT does not automatically mean cash generation is strong; negative PAT alone does not explain the full business.",
+      "sources": [
+        {
+          "name": "SEBI Offer Document Guide",
+          "url": "https://www.sebi.gov.in/sebi_data/docfiles/20612_t.html"
+        },
+        {
+          "name": "SEBI Public Issues",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits revenue, ebitda, ebit, pat and eps?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "number": 15,
+      "title": "P/E, P/B and EV/EBITDA",
+      "priority": "P1",
+      "plain": "Valuation ratios relate a company's price or enterprise value to a financial measure. They are meaningful only when inputs, dates, accounting basis and peer context are clear.",
+      "example": "Compare a hypothetical issuer with the peers named in the RHP's Basis for Issue Price section. Record each peer's source and date.",
+      "diagram": "Share price / market capitalisation + financial measure → valuation multiple.",
+      "formula": "P/E = market capitalisation ÷ PAT. P/B = market capitalisation ÷ book equity. EV/EBITDA = enterprise value ÷ EBITDA.",
+      "can_infer": "You can compare the arithmetic of disclosed valuation multiples with stated peers.",
+      "cannot_infer": "No multiple is universally cheap or expensive. A ratio alone cannot decide suitability.",
+      "sources": [
+        {
+          "name": "Issuer RHP — Basis for Issue Price",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        },
+        {
+          "name": "SEBI Offer Document Guide",
+          "url": "https://www.sebi.gov.in/sebi_data/docfiles/20612_t.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits p/e, p/b and ev/ebitda?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "number": 16,
+      "title": "ROE, ROCE, debt/equity and interest coverage",
+      "priority": "P1",
+      "plain": "These ratios describe return on equity, return on capital, leverage and ability to meet interest costs. Definitions can differ, so reproduce the issuer's stated calculation where possible.",
+      "example": "A capital-heavy manufacturer and an asset-light software company may have very different financial structures. Compare like with like.",
+      "diagram": "Profit / EBIT / debt values → ratio using the stated denominator and average-balance convention.",
+      "formula": "ROE = PAT ÷ average equity. Debt/equity = total debt ÷ equity. Interest coverage = EBIT ÷ finance cost. ROCE depends on stated capital employed.",
+      "can_infer": "You can describe relationships among disclosed financial inputs.",
+      "cannot_infer": "A ratio does not prove a company is good or bad without sector, trend, accounting and peer context.",
+      "sources": [
+        {
+          "name": "Issuer RHP restated financials",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        },
+        {
+          "name": "SEBI Offer Document Guide",
+          "url": "https://www.sebi.gov.in/sebi_data/docfiles/20612_t.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits roe, roce, debt/equity and interest coverage?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "number": 17,
+      "title": "Operating cash flow, free cash flow and working capital",
+      "priority": "P1",
+      "plain": "Profit is calculated using accounting rules; operating cash flow shows cash generated or used by operations. Free cash flow is often operating cash flow less capital expenditure, but the definition must be stated. Working capital supports day-to-day operations.",
+      "example": "A wholesaler may report sales but wait months to collect from customers. Profit and cash flow can therefore move differently.",
+      "diagram": "Sales → receivables / inventory → cash collection → operating cash flow → capex → illustrative free cash flow.",
+      "formula": "Illustrative FCF = operating cash flow − capital expenditure. Working capital = current assets − current liabilities.",
+      "can_infer": "You can compare profit with cash generation and inspect working-capital movements.",
+      "cannot_infer": "A single year's cash-flow figure is not enough to establish a stable trend.",
+      "sources": [
+        {
+          "name": "Issuer RHP cash flow statement",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        },
+        {
+          "name": "SEBI Offer Document Guide",
+          "url": "https://www.sebi.gov.in/sebi_data/docfiles/20612_t.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits operating cash flow, free cash flow and working capital?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "number": 18,
+      "title": "Receivables, inventory and customer concentration",
+      "priority": "P2",
+      "plain": "Receivables are amounts customers owe the company. Inventory is stock held for sale or production. Customer concentration shows how much revenue depends on a small number of customers.",
+      "example": "A supplier receiving 55% of revenue from one customer may depend heavily on that buyer. The percentage must be extracted from the offer document, not guessed.",
+      "diagram": "Sales → customer invoices → receivables → collections; inventory → production / sale → cost of goods sold.",
+      "formula": "Receivable days ≈ average trade receivables ÷ revenue × 365. Inventory days ≈ average inventory ÷ cost of goods sold × 365.",
+      "can_infer": "You can inspect collection and stock-holding trends when all inputs are disclosed.",
+      "cannot_infer": "A high or rising ratio needs business context; it is not automatically proof of a problem.",
+      "sources": [
+        {
+          "name": "Issuer RHP — Our Business / Risk Factors",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits receivables, inventory and customer concentration?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "number": 19,
+      "title": "Risk factors, contingent liabilities and material litigation",
+      "priority": "P2",
+      "plain": "The risk-factor section identifies risks disclosed by the issuer. Contingent liabilities and litigation disclosures describe potential obligations or legal matters as presented in the offer document.",
+      "example": "An issuer may disclose tax disputes, customer dependency, regulatory approvals or pending litigation. Record parties, amounts and status exactly as disclosed.",
+      "diagram": "Risk factor / legal matter → disclosed facts → amount / parties / status → source page.",
+      "formula": "No universal risk score. Record disclosed category, amount if stated, parties, status and evidence.",
+      "can_infer": "You can identify the risks and legal matters the issuer disclosed.",
+      "cannot_infer": "A list of risks does not predict that each risk will occur; absence from one section does not prove absence overall.",
+      "sources": [
+        {
+          "name": "Issuer RHP — Risk Factors / Outstanding Litigation",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits risk factors, contingent liabilities and material litigation?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "number": 20,
+      "title": "Related-party transactions, promoter holdings and lock-in",
+      "priority": "P1",
+      "plain": "Related-party transactions are dealings with connected parties under applicable definitions. Promoter holding and lock-in details describe ownership and transfer restrictions.",
+      "example": "A company may rent property from a promoter-group entity or buy goods from a related party. Inspect transaction scale, counterparties and terms.",
+      "diagram": "Promoters / group entities ↔ issuer: transactions, ownership, approvals and restrictions.",
+      "formula": "Promoter holding % = promoter shares ÷ total shares × 100. RPT share of revenue = disclosed RPT sales ÷ revenue × 100, when comparable.",
+      "can_infer": "You can inspect disclosed ownership and related-party flows.",
+      "cannot_infer": "A related-party transaction is not automatically improper; inspect terms, approvals, scale and disclosure.",
+      "sources": [
+        {
+          "name": "Issuer RHP — Capital Structure / Related Party Transactions",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits related-party transactions, promoter holdings and lock-in?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "number": 21,
+      "title": "Objects of the issue and use of proceeds",
+      "priority": "P0",
+      "plain": "The Objects of the Issue section explains the stated purposes for which fresh-issue proceeds are proposed to be used. It becomes the baseline for later proceeds tracking.",
+      "example": "An issuer may allocate proceeds to repay debt, buy equipment or fund working capital. Capture exact RHP wording, amount and disclosed schedule.",
+      "diagram": "RHP objects and amounts → frozen baseline → quarterly reports → utilisation / balance / revision.",
+      "formula": "Allocation share % = allocation for an object ÷ net proceeds × 100, only when numerator and denominator are comparable.",
+      "can_infer": "You can identify what the issuer said it planned to fund.",
+      "cannot_infer": "An intended use is not completed spending. Do not call a change misuse unless the filing says so.",
+      "sources": [
+        {
+          "name": "Issuer RHP — Objects of the Issue",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        },
+        {
+          "name": "SEBI Offer Document Guide",
+          "url": "https://www.sebi.gov.in/sebi_data/docfiles/20612_t.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits objects of the issue and use of proceeds?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C22",
+      "number": 22,
+      "title": "SME IPO vs Mainboard IPO",
+      "priority": "P2",
+      "plain": "Mainboard and SME issues can differ in platform, eligibility and continuing obligations. The applicable rules must be checked for the issue and date.",
+      "example": "A smaller issuer planning an SME listing must be read under the SME platform requirements applicable at its filing date; do not assume mainboard rules apply identically.",
+      "diagram": "Exchange platform → applicable eligibility / issue / market-making / disclosure rules.",
+      "formula": "No single comparison formula. Compare the relevant platform rules in force on the issue date.",
+      "can_infer": "You can identify the platform and the rule set disclosed for an issue.",
+      "cannot_infer": "SME does not automatically mean poor quality, and mainboard does not mean low risk.",
+      "sources": [
+        {
+          "name": "NSE Emerge",
+          "url": "https://www.nseindia.com/listing/emerge"
+        },
+        {
+          "name": "BSE SME",
+          "url": "https://www.bsesme.com/"
+        },
+        {
+          "name": "SEBI",
+          "url": "https://www.sebi.gov.in/"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits sme ipo vs mainboard ipo?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C23",
+      "number": 23,
+      "title": "IPO application mistakes and allotment misconceptions",
+      "priority": "P2",
+      "plain": "Common mistakes include using unverified links, applying through third parties, misunderstanding UPI mandates, entering wrong bid details or assuming oversubscription guarantees allotment.",
+      "example": "A message promises guaranteed allotment if the applicant sends a fee to a personal UPI ID. That is a red flag; use official channels.",
+      "diagram": "Check issuer / symbol / category / bid / lot → submit through permitted channel → verify bid / allotment.",
+      "formula": "No formula. Verify application details with the official exchange, bank, broker or registrar flow.",
+      "can_infer": "You can verify the application details made available by the exchange or registrar.",
+      "cannot_infer": "Do not share PAN, application credentials, OTP or UPI PIN with an unsolicited caller or website.",
+      "sources": [
+        {
+          "name": "NSE IPO Bid Verification",
+          "url": "https://www.nseindia.com/invest/check-trades-bids-verify-ipo-bids"
+        },
+        {
+          "name": "SEBI SCORES",
+          "url": "https://scores.sebi.gov.in/"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits ipo application mistakes and allotment misconceptions?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "C24",
+      "number": 24,
+      "title": "Post-listing tracking and quarterly disclosures",
+      "priority": "P0",
+      "plain": "After listing, issuers continue publishing periodic disclosures. Use official filings to follow financial results, use of issue proceeds and other material updates.",
+      "example": "A listed issuer may publish monitoring agency reports or statements of deviation after the IPO. Link each quarter's report to the original RHP object baseline.",
+      "diagram": "RHP allocation → quarterly monitoring report / deviation statement → cumulative utilisation → evidence ledger.",
+      "formula": "Quarter movement = current cumulative utilisation − previous cumulative utilisation, with disclosed revisions explained.",
+      "can_infer": "You can state what a report disclosed at its reporting date and track changes over time.",
+      "cannot_infer": "A report not found in your collection is not proof the issuer failed to file. Use 'not found by us as of [date]'.",
+      "sources": [
+        {
+          "name": "NSE Offer Documents / Filings",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-offer-documents"
+        },
+        {
+          "name": "BSE",
+          "url": "https://www.bseindia.com/"
+        },
+        {
+          "name": "SEBI",
+          "url": "https://www.sebi.gov.in/"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which approach best fits post-listing tracking and quarterly disclosures?",
+          "options": [
+            "Use official disclosures and show the evidence.",
+            "Assume missing information.",
+            "Use an unsourced social-media claim."
+          ],
+          "answer": 0,
+          "explanation": "The platform publishes only source-backed facts and marks missing information honestly."
+        }
+      ]
+    },
+    {
+      "id": "P0-a",
+      "title": "What a monitoring agency is — and what it does not do",
+      "priority": "P0",
+      "plain": "A monitoring agency reports on utilisation of issue proceeds for certain public issues under the applicable requirements. Its report is evidence of what it checked and stated; it is not automatically a full audit of project outcomes.",
+      "example": "A hypothetical equipment project report may show amount utilised, pending balance, deviations and explanations. Read the report's own scope and caveats.",
+      "diagram": "RHP object → quarterly proceeds data → monitoring agency report → disclosed comments / deviations → evidence-linked ledger.",
+      "formula": "Unutilised proceeds = relevant allocated proceeds − reported cumulative utilisation, only where period and definitions are comparable.",
+      "can_infer": "What the report states about utilisation and the agency's stated review scope.",
+      "cannot_infer": "Do not claim a project was successful, completed, audited or cost-effective unless the evidence supports that exact claim.",
+      "sources": [
+        {
+          "name": "SEBI monitoring agency framework",
+          "url": "https://www.sebi.gov.in/"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Does a monitoring report automatically certify project quality?",
+          "options": [
+            "Yes",
+            "No — read the agency's stated scope and caveats"
+          ],
+          "answer": 1,
+          "explanation": "A monitoring report may disclaim judgment on project quality, costs or outcomes."
+        }
+      ]
+    },
+    {
+      "id": "P0-b",
+      "title": "How to read one monitoring agency report",
+      "priority": "P0",
+      "plain": "Read a report in a repeatable order: issuer and quarter, object mapping, amount utilised, unspent amount, deviations, revisions, agency comments and board comments.",
+      "example": "Take one filed quarterly report, identify a capex object and map it to the RHP allocation. Record the exact page for every number.",
+      "diagram": "Identify report → match object → extract amount → verify page → record comment → second-person review.",
+      "formula": "Quarter movement = current cumulative utilisation − previous cumulative utilisation; explain negative movement only when a disclosed revision supports it.",
+      "can_infer": "The disclosed position as at the report's stated reporting period.",
+      "cannot_infer": "Do not infer missing details. Do not say a report was not filed merely because your team has not located it.",
+      "sources": [
+        {
+          "name": "NSE Offer Documents / Filings",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-offer-documents"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What must accompany every extracted utilisation amount?",
+          "options": [
+            "Document and page reference",
+            "A chart colour",
+            "An estimated completion date"
+          ],
+          "answer": 0,
+          "explanation": "Traceability requires the original report and exact page."
+        }
+      ]
+    },
+    {
+      "id": "P0-c",
+      "title": "Why 'no deviation' does not mean 'on track'",
+      "priority": "P0",
+      "plain": "Deviation status and schedule progress are different questions. An object can have no reported deviation and still be delayed, have unspent funds or have a revised timeline.",
+      "example": "A hypothetical plant-expansion object may remain within its disclosed purpose while its commissioning date moves. Display use-of-proceeds status and schedule status separately.",
+      "diagram": "No deviation? → inspect utilisation → inspect schedule → inspect balance → inspect revised timeline / approval.",
+      "formula": "Schedule status is calculated only by comparing reported actuals with a disclosed dated milestone. No schedule = no schedule disclosed.",
+      "can_infer": "Whether reported utilisation can be compared with a schedule actually disclosed in the offer document.",
+      "cannot_infer": "Never label an object behind schedule when the offer document gives no timeline.",
+      "sources": [
+        {
+          "name": "SEBI Guide to Offer Documents",
+          "url": "https://www.sebi.gov.in/sebi_data/docfiles/20612_t.html"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "The RHP gives no deployment timeline. What should K2 show?",
+          "options": [
+            "Behind schedule",
+            "No schedule disclosed"
+          ],
+          "answer": 1,
+          "explanation": "Without a disclosed schedule there is no basis for ahead/on-time/behind classification."
+        }
+      ]
+    }
+  ],
+  "learning_paths": {
+    "beginner": [
+      "C1",
+      "C2",
+      "C4",
+      "C6",
+      "C10",
+      "C11",
+      "C13",
+      "C23"
+    ],
+    "informed": [
+      "C5",
+      "C21",
+      "P0-a",
+      "P0-b",
+      "P0-c",
+      "C24",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ]
+  }
+}

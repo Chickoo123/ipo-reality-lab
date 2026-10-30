@@ -1,0 +1,112 @@
+{
+  "as_of": "2026-10-30",
+  "principle": "Official issuer offer documents and SEBI / exchange filings are the source of truth. If sources conflict, retain both and explain the difference. Link to official documents; do not re-host or systematically reproduce exchange content without permission.",
+  "sources": [
+    {
+      "id": "SEBI",
+      "name": "Securities and Exchange Board of India",
+      "role": "Regulations, circulars, public issue filings, investor education and investor protection.",
+      "links": [
+        {
+          "label": "SEBI official website",
+          "url": "https://www.sebi.gov.in/"
+        },
+        {
+          "label": "Public issue filings",
+          "url": "https://www.sebi.gov.in/filings/public-issues.html"
+        },
+        {
+          "label": "Guide to understand an Offer Document",
+          "url": "https://www.sebi.gov.in/sebi_data/docfiles/20612_t.html"
+        },
+        {
+          "label": "Price data for educational purposes circular (8 May 2026)",
+          "url": "https://www.sebi.gov.in/web/?file=https%3A%2F%2Fwww.sebi.gov.in%2Fsebi_data%2Fattachdocs%2Fmay-2026%2F1778242522289.pdf"
+        },
+        {
+          "label": "SEBI curated links to NSE / BSE primary-market data",
+          "url": "https://www.sebi.gov.in/Curation_Links_for_Securities_Market_Data.html"
+        },
+        {
+          "label": "Investor education",
+          "url": "https://investor.sebi.gov.in/"
+        },
+        {
+          "label": "SCORES grievance portal",
+          "url": "https://scores.sebi.gov.in/"
+        }
+      ]
+    },
+    {
+      "id": "NSE",
+      "name": "National Stock Exchange of India",
+      "role": "Offer documents, public issue advertisements, disclosures and IPO bid verification.",
+      "links": [
+        {
+          "label": "NSE official website",
+          "url": "https://www.nseindia.com/"
+        },
+        {
+          "label": "Corporate filings — Offer Documents",
+          "url": "https://www.nseindia.com/companies-listing/corporate-filings-offer-documents"
+        },
+        {
+          "label": "Public issue advertisements",
+          "url": "https://www.nseindia.com/companies-listing/corporate-public-issue-advertisements"
+        },
+        {
+          "label": "IPO bid verification",
+          "url": "https://www.nseindia.com/invest/check-trades-bids-verify-ipo-bids"
+        },
+        {
+          "label": "NSE Terms of Use",
+          "url": "https://www.nseindia.com/static/nse-terms-of-use"
+        }
+      ]
+    },
+    {
+      "id": "BSE",
+      "name": "BSE Limited",
+      "role": "Public issue information and issuer / exchange disclosures.",
+      "links": [
+        {
+          "label": "BSE official website",
+          "url": "https://www.bseindia.com/"
+        },
+        {
+          "label": "BSE Public Issues (referenced by SEBI curated links)",
+          "url": "https://www.bseindia.com/markets/PublicIssues/IPOIssues_new.aspx?id=1&Type=p"
+        },
+        {
+          "label": "BSE SME public issues",
+          "url": "https://www.bsesme.com/PublicIssues/PublicIssues.aspx?id=2"
+        }
+      ]
+    },
+    {
+      "id": "ISSUER",
+      "name": "Issuer / company website",
+      "role": "Original DRHP, RHP, prospectus, annual reports and issuer disclosures.",
+      "links": []
+    },
+    {
+      "id": "REGISTRAR",
+      "name": "Registrar to the issue",
+      "role": "Basis of allotment and allotment-status links where published.",
+      "links": []
+    },
+    {
+      "id": "MONITORING",
+      "name": "Monitoring agency",
+      "role": "Quarterly reports on utilisation of issue proceeds, within the applicable issue-specific regulatory framework.",
+      "links": []
+    }
+  ],
+  "access_controls": {
+    "nse_automation": "Disabled. NSE Terms of Use prohibit systematic or automated collection including scraping, data mining, extraction and harvesting. Written permission and legal review required before automation.",
+    "bse_automation": "Disabled. BSE-specific terms and permissions for the relevant pages must be checked before automation.",
+    "sebi_automation": "No scraping assumed. Use official published downloads / links and review terms before automation.",
+    "rehosting": "Link to source documents; do not mirror PDFs unless the licence clearly permits it.",
+    "api_feeds": "Enable only after documented permission, a data licence, usage limits, contract and audit trail."
+  }
+}

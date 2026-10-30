@@ -1,0 +1,55 @@
+{
+  "as_of": "2026-10-30",
+  "note": "Snapshot from publicly visible product descriptions; not an exhaustive audit. Features, availability and terms can change. Re-check before external uniqueness claims.",
+  "matrix": [
+    {
+      "name": "SEBI / NSE / BSE",
+      "overlap": "Official source layer",
+      "capabilities": "Regulatory filings, offer documents, public issue information, exchange disclosures and investor education.",
+      "implication": "Treat these as authoritative source destinations, not competitors to a source-linked research workflow.",
+      "url": "https://www.sebi.gov.in/Curation_Links_for_Securities_Market_Data.html"
+    },
+    {
+      "name": "Trendlyne",
+      "overlap": "High — IPO tracking",
+      "capabilities": "Upcoming/open/recent IPO dashboard, DRHP/RHP links, subscription categories and listing gain/loss analysis.",
+      "implication": "Basic IPO calendars, subscription tables and listing dashboards are saturated.",
+      "url": "https://trendlyne.freshdesk.com/support/solutions/articles/84000396006-what-can-i-find-on-the-ipo-dashboard-"
+    },
+    {
+      "name": "BeaconCaps",
+      "overlap": "High — prospectus research and accountability",
+      "capabilities": "IPO Insights, forensic prospectus reads, use-of-proceeds coverage and post-listing accountability tracking.",
+      "implication": "K1/K2 cannot be claimed unique. Test differentiation through cross-IPO object/quarter normalisation, preserved RHP baselines, source-page evidence and reproducible validation.",
+      "url": "https://www.beaconcaps.com/ipo"
+    },
+    {
+      "name": "CredoNomics",
+      "overlap": "High — IPO financial analysis / scores",
+      "capabilities": "Published quantitative IPO score methodology using growth, returns, cash conversion, leverage and peer valuation.",
+      "implication": "Avoid unexplained composite scores. Show raw inputs, formulas, source dates and coverage.",
+      "url": "https://www.credonomics.in/ipo/methodology"
+    },
+    {
+      "name": "IPOWATCH",
+      "overlap": "High — IPO calendar / GMP / subscription",
+      "capabilities": "Current and upcoming issues, GMP and subscription / allotment tracking.",
+      "implication": "Do not build another live-GMP clone. Keep GMP out of the core proposition.",
+      "url": "https://ipowatch.cc/"
+    },
+    {
+      "name": "GMP Today",
+      "overlap": "High — unofficial GMP aggregation",
+      "capabilities": "Publicly describes multiple-source GMP aggregation, timestamps and historical accuracy data.",
+      "implication": "Optional GMP research only after licence, methodology, attribution and SEBI review; GMP is not official exchange data.",
+      "url": "https://gmptoday.in/"
+    },
+    {
+      "name": "SEBI Investor Education",
+      "overlap": "High — foundational education",
+      "capabilities": "Official investor education and offer-document guidance.",
+      "implication": "Academy must add applied examples tied to reviewed issuer filings rather than copy generic explainers.",
+      "url": "https://investor.sebi.gov.in/"
+    }
+  ]
+}

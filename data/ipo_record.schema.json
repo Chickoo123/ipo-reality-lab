@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IPO Reality Lab IPO record",
+  "type": "object",
+  "required": [
+    "id",
+    "company_name",
+    "board",
+    "documents",
+    "objects_of_issue",
+    "last_checked"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "board": {
+      "enum": [
+        "mainboard",
+        "sme"
+      ]
+    },
+    "issue_status": {
+      "enum": [
+        "upcoming",
+        "open",
+        "closed",
+        "listed",
+        "withdrawn",
+        "unknown"
+      ]
+    },
+    "last_checked": {
+      "type": "string",
+      "format": "date"
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "url",
+          "source_id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "DRHP",
+              "RHP",
+              "Prospectus",
+              "MonitoringAgencyReport",
+              "StatementOfDeviation",
+              "QuarterlyResult",
+              "Other"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "objects_of_issue": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "baseline_document_id",
+          "baseline_page",
+          "schedule",
+          "baseline_allocation_inr"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "rhp_allocation_inr": {
+            "type": "number"
+          },
+          "baseline_document_id": {
+            "type": "string"
+          },
+          "baseline_page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "schedule": {
+            "type": "object",
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "disclosed",
+                  "not_disclosed"
+                ]
+              },
+              "milestones": {
+                "type": "array"
+              }
+            }
+          },
+          "reports": {
+            "type": "array"
+          },
+          "baseline_allocation_inr": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

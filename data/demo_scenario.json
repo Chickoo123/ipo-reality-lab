@@ -1,0 +1,99 @@
+{
+  "label": "FICTIONAL SIMULATION — NOT A REAL ISSUER OR IPO",
+  "issuer": "Example Components Limited (fictional)",
+  "issue_size_crore": 100,
+  "fresh_issue_crore": 70,
+  "ofs_crore": 30,
+  "objects": [
+    {
+      "id": "debt",
+      "name": "Repayment of borrowings",
+      "allocation": 25,
+      "planned": [
+        8,
+        18,
+        25
+      ],
+      "actual": [
+        6,
+        16,
+        22
+      ]
+    },
+    {
+      "id": "capex",
+      "name": "Capital expenditure",
+      "allocation": 30,
+      "planned": [
+        5,
+        15,
+        28
+      ],
+      "actual": [
+        4,
+        12,
+        18
+      ]
+    },
+    {
+      "id": "working",
+      "name": "Working capital",
+      "allocation": 10,
+      "planned": [
+        5,
+        8,
+        10
+      ],
+      "actual": [
+        5,
+        8,
+        10
+      ]
+    },
+    {
+      "id": "gcp",
+      "name": "General corporate purposes",
+      "allocation": 5,
+      "planned": [
+        2,
+        4,
+        5
+      ],
+      "actual": [
+        2,
+        4,
+        5
+      ]
+    }
+  ],
+  "financials": {
+    "revenue": 500,
+    "ebitda": 70,
+    "pat": 28,
+    "operating_cash_flow": 22,
+    "debt": 110,
+    "equity": 140,
+    "interest": 14,
+    "ebit": 55,
+    "average_equity": 130,
+    "capital_employed": 250,
+    "capex": 30
+  },
+  "sellers": [
+    {
+      "name": "Example Growth Fund",
+      "type": "PE/VC investor",
+      "shares": 1000000,
+      "waca": 45,
+      "basis": "Fictional example only"
+    }
+  ],
+  "doc_changes": [
+    {
+      "field": "Issue size",
+      "from": "₹120 crore",
+      "to": "₹100 crore",
+      "reason": "Not inferred"
+    }
+  ]
+}

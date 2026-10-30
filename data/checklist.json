@@ -1,0 +1,106 @@
+{
+  "items": [
+    {
+      "id": "G01",
+      "title": "Business model",
+      "rhp_section": "Our Business",
+      "what_to_check": "How the company makes money, who pays and what drives demand."
+    },
+    {
+      "id": "G02",
+      "title": "Industry conditions",
+      "rhp_section": "Industry Overview",
+      "what_to_check": "Source/date of market data and who prepared or paid for the report."
+    },
+    {
+      "id": "G03",
+      "title": "Revenue and profit growth",
+      "rhp_section": "Restated Financial Information",
+      "what_to_check": "Trend across all disclosed years, not one isolated period."
+    },
+    {
+      "id": "G04",
+      "title": "Operating cash flow",
+      "rhp_section": "Cash Flow Statement",
+      "what_to_check": "Whether accounting profit converts into operating cash."
+    },
+    {
+      "id": "G05",
+      "title": "Margins",
+      "rhp_section": "Financial Information / MD&A",
+      "what_to_check": "Direction, drivers and management explanation."
+    },
+    {
+      "id": "G06",
+      "title": "Debt and interest burden",
+      "rhp_section": "Financial Indebtedness",
+      "what_to_check": "Debt level, cost and whether issue proceeds repay it."
+    },
+    {
+      "id": "G07",
+      "title": "ROE and ROCE",
+      "rhp_section": "Basis for Issue Price / financial statements",
+      "what_to_check": "Compare with the issuer's stated peers and definitions."
+    },
+    {
+      "id": "G08",
+      "title": "Valuation versus peers",
+      "rhp_section": "Basis for Issue Price",
+      "what_to_check": "Multiples at the price band, peer source and date."
+    },
+    {
+      "id": "G09",
+      "title": "Fresh issue vs OFS",
+      "rhp_section": "The Offer / Capital Structure",
+      "what_to_check": "How much money reaches the company versus sellers."
+    },
+    {
+      "id": "G10",
+      "title": "Use of proceeds",
+      "rhp_section": "Objects of the Issue",
+      "what_to_check": "Specific / general purposes and disclosed deployment schedule."
+    },
+    {
+      "id": "G11",
+      "title": "Litigation and contingent liabilities",
+      "rhp_section": "Outstanding Litigation",
+      "what_to_check": "Parties, amounts, status and contingent exposure."
+    },
+    {
+      "id": "G12",
+      "title": "Auditor observations",
+      "rhp_section": "Restated financials / auditor report",
+      "what_to_check": "Qualifications, emphasis-of-matter and auditor changes."
+    },
+    {
+      "id": "G13",
+      "title": "Promoter holding and lock-in",
+      "rhp_section": "Capital Structure",
+      "what_to_check": "Pre/post issue ownership, pledges if disclosed and lock-in."
+    },
+    {
+      "id": "G14",
+      "title": "Customer concentration",
+      "rhp_section": "Risk Factors / Our Business",
+      "what_to_check": "Revenue share of major customers and dependencies."
+    },
+    {
+      "id": "G15",
+      "title": "Related-party transactions",
+      "rhp_section": "Related Party Transactions",
+      "what_to_check": "Scale, nature, counterparties and disclosed approvals."
+    },
+    {
+      "id": "G16",
+      "title": "GMP limitations",
+      "rhp_section": "Not in RHP",
+      "what_to_check": "Unofficial, unregulated, source-dependent and not predictive."
+    },
+    {
+      "id": "G17",
+      "title": "Subscription / market conditions",
+      "rhp_section": "Final exchange data after close",
+      "what_to_check": "Category-wise demand; oversubscription alone says nothing about business value."
+    }
+  ]
+}
