@@ -4,12 +4,12 @@ const state={lessons:[],cases:[],scams:[],checklist:[],ipos:[],currentScam:0,qui
 async function json(path){const r=await fetch(path);if(!r.ok)throw new Error("Could not load "+path);return r.json()}
 const money=n=>"₹"+Number(n).toLocaleString("en-IN",{maximumFractionDigits:2})+" crore";
 async function boot(){
- const [a,c,s,g,i,competitors,policy]=await Promise.all([
+ const [a,c,s,g,i,sources,policy]=await Promise.all([
   json("data/academy.json"),json("data/cases.json"),json("data/scams.json"),json("data/checklist.json"),
-  json("data/ipo_records.json"),json("data/competitor_matrix.json"),json("data/regulatory_policy.json")
+  json("data/ipo_records.json"),json("data/source_registry.json"),json("data/regulatory_policy.json")
  ]);
  state.lessons=a.modules;state.cases=c.cases;state.scams=s.items;state.checklist=g.items;state.ipos=i.records;
- renderIPO();renderAcademy();renderCases();renderScams(s);renderChecklist();renderGChecklist();renderCompetitors(competitors);renderPhases();wireResearch();wireToolTabs();wireD1();wireD2();wireD3();wireQuiz();wireTheme();
+ renderIPO();renderAcademy();renderCases();renderScams(s);renderChecklist();renderGChecklist();renderSources(sources);wireResearch();wireToolTabs();wireD1();wireD2();wireD3();wireQuiz();wireTheme();
  $("#footer-date").textContent="BUILD · 30 OCT 2026";
 }
 function renderIPO(){
@@ -25,13 +25,13 @@ function renderAcademy(){
  const host=$("#lesson-list"),view=$("#lesson-view"),search=$("#lesson-search"),priority=$("#lesson-priority");
  function draw(){
   const rows=state.lessons.filter(l=>(!search.value||l.title.toLowerCase().includes(search.value.toLowerCase())||l.id.toLowerCase().includes(search.value.toLowerCase()))&&(!priority.value||l.priority===priority.value));
-  host.innerHTML=rows.map(l=>`<button data-id="${esc(l.id)}"><strong>${esc(l.id)} · ${esc(l.title)}</strong><small>${esc(l.priority)}</small></button>`).join("");
+  host.innerHTML=rows.map(l=>`<button data-id="${esc(l.id)}"><strong>Lesson ${String(l.number).padStart(2,"0")} · ${esc(l.title)}</strong><small>${esc(l.priority)}</small></button>`).join("");
   host.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>showLesson(b.dataset.id,b)));
  }
  function showLesson(id,btn){
   const l=state.lessons.find(x=>x.id===id);if(!l)return;
   host.querySelectorAll("button").forEach(x=>x.classList.toggle("selected",x===btn));
-  view.innerHTML=`<div class="eyebrow">${esc(l.id)} / ${esc(l.priority)} PRIORITY</div><h3>${esc(l.title)}</h3><p><b>In simple words</b><br>${esc(l.plain)}</p><h4>Relatable Indian example</h4><p>${esc(l.example)}</p><div class="lesson-diagram">${esc(l.diagram)}</div><h4>Formula / how to read it</h4><p>${esc(l.formula)}</p><h4>What you can infer</h4><p>${esc(l.can_infer)}</p><h4>What you cannot infer</h4><p>${esc(l.cannot_infer)}</p><h4>Authoritative source material</h4><p>${l.sources.map(s=>`<a target="_blank" rel="noopener" href="${esc(s.url)}">${esc(s.name)} ↗</a>`).join(" · ")}</p><div class="lesson-quiz"><div class="eyebrow">KNOWLEDGE CHECK</div>${l.quiz.map((q,n)=>`<div class="quiz-q"><b>${n+1}. ${esc(q.question)}</b><div>${q.options.map((o,j)=>`<button data-q="${n}" data-a="${j}">${esc(o)}</button>`).join("")}</div><div class="quiz-feedback" id="lesson-feedback-${n}" aria-live="polite"></div></div>`).join("")}</div>`;
+  view.innerHTML=`<div class="eyebrow">LESSON ${String(l.number).padStart(2,"0")} / ${esc(l.priority).toUpperCase()}</div><h3>${esc(l.title)}</h3><p><b>In simple words</b><br>${esc(l.plain)}</p><h4>Relatable Indian example</h4><p>${esc(l.example)}</p><div class="lesson-diagram">${esc(l.diagram)}</div><h4>Formula / how to read it</h4><p>${esc(l.formula)}</p><h4>What you can infer</h4><p>${esc(l.can_infer)}</p><h4>What you cannot infer</h4><p>${esc(l.cannot_infer)}</p><h4>Authoritative source material</h4><p>${l.sources.map(s=>`<a target="_blank" rel="noopener" href="${esc(s.url)}">${esc(s.name)} ↗</a>`).join(" · ")}</p><div class="lesson-quiz"><div class="eyebrow">KNOWLEDGE CHECK</div>${l.quiz.map((q,n)=>`<div class="quiz-q"><b>${n+1}. ${esc(q.question)}</b><div>${q.options.map((o,j)=>`<button data-q="${n}" data-a="${j}">${esc(o)}</button>`).join("")}</div><div class="quiz-feedback" id="lesson-feedback-${n}" aria-live="polite"></div></div>`).join("")}</div>`;
   view.querySelectorAll(".quiz-q button").forEach(b=>b.addEventListener("click",()=>{
    const q=l.quiz[Number(b.dataset.q)],a=Number(b.dataset.a),out=view.querySelector(`#lesson-feedback-${b.dataset.q}`);
    out.textContent=(a===q.answer?"Correct. ":"Not quite. ")+q.explanation;
@@ -41,7 +41,7 @@ function renderAcademy(){
  search.addEventListener("input",draw);priority.addEventListener("change",draw);draw();
 }
 function renderCases(){
- $("#case-grid").innerHTML=state.cases.map(c=>`<article class="case-card"><span class="year">${esc(c.year)} · HISTORICAL CASE</span><h3>${esc(c.name)}</h3><p>${esc(c.theme)}</p><small>${esc(c.status)}</small><ul>${c.items_to_verify.slice(0,3).map(x=>`<li>${esc(x)}</li>`).join("")}</ul><a href="${esc(c.official_start||"https://www.sebi.gov.in/filings/public-issues.html")}" target="_blank" rel="noopener">Start with official filings ↗</a></article>`).join("");
+ $("#case-grid").innerHTML=state.cases.map(c=>`<article class="case-card"><span class="year">${esc(c.year)} · SOURCE-LINKED EXAMPLE</span><h3>${esc(c.name)}</h3><p>${esc(c.theme)}</p><small>${esc(c.status)}</small><ul>${c.items_to_verify.slice(0,3).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>${(c.sources||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)} ↗</a>`).join(" · ")}</article>`).join("");
 }
 function renderScams(data){
  $("#scam-library").innerHTML=state.scams.map(s=>`<article class="scam-card"><small>${esc(s.scenario_type)}</small><h3>${esc(s.title)}</h3><div class="claim">${esc(s.claim)}</div><p><b>Reality:</b> ${esc(s.reality)}</p><p><b>Safer action:</b> ${esc(s.action)}</p></article>`).join("");
@@ -71,30 +71,21 @@ function updateChecklistProgress(){
 function renderGChecklist(){
  $("#g-checklist").innerHTML=state.checklist.map((x,i)=>`<article class="g-item"><span>${String(i+1).padStart(2,"0")}</span><div><b>${esc(x.title)}</b><small><strong>${esc(x.rhp_section)}:</strong> ${esc(x.what_to_check)}</small></div></article>`).join("");
 }
-function renderCompetitors(data){
- $("#competitor-matrix").innerHTML=data.matrix.map(c=>`<article class="competitor"><div><b>${esc(c.name)}</b></div><p><strong>${esc(c.overlap)}</strong><br>${esc(c.capabilities)}</p><p>${esc(c.implication)}<br><a href="${esc(c.url)}" target="_blank" rel="noopener">Public product/source page ↗</a></p></article>`).join("");
-}
-function renderPhases(){
- const phases=[
- ["PHASE 0 · FEASIBILITY","Research and legal checks","Competitor review, source terms, regulatory rule and data access gates.","INITIAL SNAPSHOT — RECHECKS OPEN"],
- ["PHASE 1 · MVP","Promise vs Proof","B1, B2, K1, K2; 10 IPOs; P0 lessons; D1 simulator.","DATA POPULATION PENDING"],
- ["PHASE 2","Seller and document diff","K3, K4; 25 IPOs; B3 Cash Reality Test.","PLANNED"],
- ["PHASE 3","Deeper learning","P1 Academy, D2, D3, D6 and case library.","PLANNED"],
- ["PHASE 4","Track and protect","P2 Academy, F, D4, D5, G, B4 and A tracker.","PLANNED"],
- ["PHASE 5","Audit and launch","Claude / ChatGPT / Gemini review, accessibility and final validation.","PLANNED"]
- ];
- $("#phase-grid").innerHTML=phases.map((p,i)=>`<article class="phase ${i===0?"current":""}"><span>${p[0]}</span><h3>${p[1]}</h3><p>${p[2]}</p><b>${p[3]}</b></article>`).join("");
+function renderSources(data){
+ const preferred=["SEBI","NSE","BSE","ISSUER","REGISTRAR","MONITORING"];
+ const rows=preferred.map(id=>data.sources.find(s=>s.id===id)).filter(Boolean);
+ $("#source-list").innerHTML=rows.map(s=>`<article class="competitor"><div><b>${esc(s.name)}</b></div><p>${esc(s.role)}</p><p>${(s.links||[]).slice(0,4).map(link=>`<a href="${esc(link.url)}" target="_blank" rel="noopener">${esc(link.label)} ↗</a>`).join(" · ")}</p></article>`).join("");
 }
 function wireResearch(){
  const detail=$("#research-detail");
  const labels={
-  money:["B1 / MONEY TRAIL","Follow the proceeds","The Money Trail separates fresh issue from OFS, then maps fresh-issue proceeds to the offer document's stated objects."],
-  financial:["B3 / CASH REALITY TEST","Read the numbers, not a score","D3 is a hypothetical calculator. Issuer-specific B3 analysis requires the RHP's restated statements and peer-source validation."],
-  sentiment:["B4 / SENTIMENT VS FUNDAMENTALS","Historical comparison only","This lens remains gated by the SEBI educational market-price data rule, source permissions and dated historical evidence."],
-  ledger:["K1 / PROMISE VS PROOF","Keep the original allocation visible","Compare the offer-document baseline with the monitoring agency's reported cumulative utilisation. Each amount links to its source page."],
-  clock:["K2 / PROCEEDS CLOCK","A schedule status needs a disclosed schedule","Compare disclosed deployment periods with actual utilisation. An interim report must not be labelled late merely because an annual target is not yet due."],
-  seller:["K3 / SELLER'S LENS","Who received OFS proceeds?","Seller-level data is sourced from the prospectus. WACA basis and share quantity must remain visible."],
-  diff:["K4 / DRAFT-TO-FINAL DIFF","What changed across the offer documents?","Compare DRHP, RHP and final prospectus with evidence on both sides. No reason for a change is inferred."]
+  money:["MONEY TRAIL","Follow the proceeds","Separate fresh issue from OFS, then trace the issuer's stated use of net proceeds against later reported utilisation."],
+  financial:["FINANCIAL ANALYSIS","Read the numbers, not a score","The calculator uses hypothetical inputs. Issuer-level analysis requires restated financial statements and dated, comparable peer sources."],
+  sentiment:["HISTORICAL MARKET CONTEXT","Historical comparison only","Market-price data remains disabled until source permissions and applicable educational-use safeguards are confirmed."],
+  ledger:["PROCEEDS ACCOUNTABILITY","Keep the original allocation visible","Compare the offer-document baseline with the monitoring agency's reported cumulative utilisation. Each amount links to its source page."],
+  clock:["DEPLOYMENT TIMELINE","A schedule status needs a disclosed schedule","Compare disclosed deployment periods with actual utilisation. An interim report must not be labelled late merely because an annual target is not yet due."],
+  seller:["SELLER DISCLOSURES","Who received OFS proceeds?","Seller-level data is sourced from the prospectus. WACA basis and share quantity must remain visible."],
+  diff:["DOCUMENT COMPARISON","What changed across the offer documents?","Compare DRHP, RHP and final prospectus with evidence on both sides. No reason for a change is inferred."]
  };
  const record=state.ipos.find(x=>x.id==="western-carriers-2024");
  const link=(docId)=>{const d=record?.documents?.find(x=>x.id===docId);return d?`<a target="_blank" rel="noopener" href="${esc(d.url)}">${esc(d.title)} ↗</a>`:""};
@@ -124,7 +115,7 @@ function wireResearch(){
  function sellerTable(){
   if(!record)return "";
   const rows=record.sellers.map(x=>`<tr><td>${esc(x.name)}</td><td>${esc(x.type)}</td><td>${Number(x.shares_offered).toLocaleString("en-IN")}</td><td>₹${Number(x.waca).toFixed(2)}</td><td>${esc(x.waca_basis)}</td></tr>`).join("");
-  return `<div class="research-evidence"><h4>Prospectus seller disclosure</h4><div class="table-wrap"><table><thead><tr><th>Seller</th><th>Type</th><th>Shares offered</th><th>WACA</th><th>Basis</th></tr></thead><tbody>${rows}</tbody></table></div><p class="fine-print">${link("prospectus")} — printed p. 1. K3 comparison across multiple IPOs remains Phase 2.</p></div>`;
+  return `<div class="research-evidence"><h4>Prospectus seller disclosure</h4><div class="table-wrap"><table><thead><tr><th>Seller</th><th>Type</th><th>Shares offered</th><th>WACA</th><th>Basis</th></tr></thead><tbody>${rows}</tbody></table></div><p class="fine-print">${link("prospectus")} — printed p. 1. Cross-issuer comparisons require additional source-reviewed issuer records.</p></div>`;
  }
  $$("[data-open]").forEach(b=>b.addEventListener("click",()=>{
   const key=b.dataset.open,x=labels[key];
@@ -134,7 +125,7 @@ function wireResearch(){
   if(key==="clock")extra=clockTable();
   if(key==="seller")extra=sellerTable();
   detail.hidden=false;
-  detail.innerHTML=`<small class="eyebrow">${esc(x[0])}</small><h3>${esc(x[1])}</h3><p>${esc(x[2])}</p>${extra}<p class="fine-print"><b>Coverage status:</b> one initial evidence-backed issuer example has been entered. The 10-IPO MVP research target is not yet complete; the RHP page-level cross-check and additional issuer records remain outstanding.</p>`;
+  detail.innerHTML=`<small class="eyebrow">${esc(x[0])}</small><h3>${esc(x[1])}</h3><p>${esc(x[2])}</p>${extra}<p class="fine-print"><b>Coverage status:</b> one initial evidence-linked issuer example is included. The original RHP page-level cross-check and broader issuer coverage remain outstanding.</p>`;
   detail.scrollIntoView({behavior:"smooth",block:"nearest"});
  }));
 }
@@ -185,7 +176,7 @@ function wireD3(){
 }
 function wireQuiz(){
  $("#quiz-start").addEventListener("click",()=>{
-  const level=$("#quiz-level").value,all=state.lessons.filter(x=>x.id.startsWith("C"));
+  const level=$("#quiz-level").value,all=state.lessons.filter(x=>x.id.startsWith("lesson-"));
   const subset=level==="beginner"?all.slice(0,8):level==="intermediate"?all.slice(8,16):all.slice(16,24);
   state.quiz=subset.map(l=>({...l.quiz[0],topic:l.title})).sort(()=>Math.random()-.5).slice(0,5);
   let at=0,score=0;

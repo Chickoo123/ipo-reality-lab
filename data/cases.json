@@ -1,158 +1,31 @@
 {
+  "as_of": "2026-10-30",
+  "note": "Only issuer examples with traceable primary documents are displayed. Coverage is deliberately limited while source verification is completed.",
   "cases": [
     {
-      "name": "LIC",
-      "year": 2022,
-      "theme": "OFS structure and government divestment",
-      "status": "Research queue — original source verification required",
-      "items_to_verify": [
-        "Offer structure and price from prospectus",
-        "Restated financials and valuation from RHP",
-        "Risk factors and material disclosures",
-        "Listing-day result and later journey from dated permitted data",
-        "Corporate actions and source/page references"
-      ],
-      "official_start": "https://www.sebi.gov.in/filings/public-issues.html"
-    },
-    {
-      "name": "Coal India",
-      "year": 2010,
-      "theme": "Government divestment and offer structure",
-      "status": "Research queue — original source verification required",
-      "items_to_verify": [
-        "Offer structure and price from prospectus",
-        "Restated financials and valuation from RHP",
-        "Risk factors and material disclosures",
-        "Listing-day result and later journey from dated permitted data",
-        "Corporate actions and source/page references"
-      ],
-      "official_start": "https://www.sebi.gov.in/filings/public-issues.html"
-    },
-    {
-      "name": "Zomato / Eternal",
-      "year": 2021,
-      "theme": "Fresh issue, growth and financials at IPO",
-      "status": "Research queue — original source verification required",
-      "items_to_verify": [
-        "Offer structure and price from prospectus",
-        "Restated financials and valuation from RHP",
-        "Risk factors and material disclosures",
-        "Listing-day result and later journey from dated permitted data",
-        "Corporate actions and source/page references"
-      ],
-      "official_start": "https://www.sebi.gov.in/filings/public-issues.html"
-    },
-    {
-      "name": "Paytm / One97 Communications",
-      "year": 2021,
-      "theme": "Fresh issue plus OFS; listing-day vs later journey",
-      "status": "Research queue — original source verification required",
-      "items_to_verify": [
-        "Offer structure and price from prospectus",
-        "Restated financials and valuation from RHP",
-        "Risk factors and material disclosures",
-        "Listing-day result and later journey from dated permitted data",
-        "Corporate actions and source/page references"
-      ],
-      "official_start": "https://www.sebi.gov.in/filings/public-issues.html"
-    },
-    {
-      "name": "Reliance Power",
-      "year": 2008,
-      "theme": "Oversubscription and market-cycle context",
-      "status": "Research queue — original source verification required",
-      "items_to_verify": [
-        "Offer structure and price from prospectus",
-        "Restated financials and valuation from RHP",
-        "Risk factors and material disclosures",
-        "Listing-day result and later journey from dated permitted data",
-        "Corporate actions and source/page references"
-      ],
-      "official_start": "https://www.sebi.gov.in/filings/public-issues.html"
-    },
-    {
-      "name": "Ceigall India",
+      "name": "Western Carriers (India) Limited",
       "year": 2024,
-      "theme": "Monitoring report scope and utilisation",
-      "status": "Research queue — original source verification required",
+      "theme": "Issue structure, use of fresh-issue proceeds and the first monitoring-agency report.",
+      "status": "Initial evidence-linked profile. Original RHP page-level cross-check and full historical case review remain pending.",
       "items_to_verify": [
-        "Offer structure and price from prospectus",
-        "Restated financials and valuation from RHP",
-        "Risk factors and material disclosures",
-        "Listing-day result and later journey from dated permitted data",
-        "Corporate actions and source/page references"
+        "Prospectus: ₹492.88 crore total issue, comprising ₹400 crore fresh issue and ₹92.88 crore OFS.",
+        "Net proceeds of ₹362.938 crore allocated across debt repayment, capital expenditure and general corporate purposes.",
+        "First monitoring report: ₹10 crore cumulative utilisation reported as at 30 September 2024; agency limitations must be read alongside the figures."
       ],
-      "official_start": "https://www.sebi.gov.in/filings/public-issues.html"
-    },
-    {
-      "name": "Western Carriers (India)",
-      "year": 2024,
-      "theme": "Post-IPO proceeds tracking",
-      "status": "Research queue — original source verification required",
-      "items_to_verify": [
-        "Offer structure and price from prospectus",
-        "Restated financials and valuation from RHP",
-        "Risk factors and material disclosures",
-        "Listing-day result and later journey from dated permitted data",
-        "Corporate actions and source/page references"
-      ],
-      "official_start": "https://www.sebi.gov.in/filings/public-issues.html"
-    },
-    {
-      "name": "Shadowfax Technologies",
-      "year": 2026,
-      "theme": "Proceeds Clock / capex schedule comparison",
-      "status": "Research queue — original source verification required",
-      "items_to_verify": [
-        "Offer structure and price from prospectus",
-        "Restated financials and valuation from RHP",
-        "Risk factors and material disclosures",
-        "Listing-day result and later journey from dated permitted data",
-        "Corporate actions and source/page references"
-      ],
-      "official_start": "https://www.sebi.gov.in/filings/public-issues.html"
-    },
-    {
-      "name": "BlackBuck / Zinka Logistics",
-      "year": 2024,
-      "theme": "Promise vs Proof monitoring candidate",
-      "status": "Research queue — original source verification required",
-      "items_to_verify": [
-        "Offer structure and price from prospectus",
-        "Restated financials and valuation from RHP",
-        "Risk factors and material disclosures",
-        "Listing-day result and later journey from dated permitted data",
-        "Corporate actions and source/page references"
-      ],
-      "official_start": "https://www.sebi.gov.in/filings/public-issues.html"
-    },
-    {
-      "name": "Emmvee Photovoltaic Power",
-      "year": 2025,
-      "theme": "Monitoring agency scope and caveats",
-      "status": "Research queue — original source verification required",
-      "items_to_verify": [
-        "Offer structure and price from prospectus",
-        "Restated financials and valuation from RHP",
-        "Risk factors and material disclosures",
-        "Listing-day result and later journey from dated permitted data",
-        "Corporate actions and source/page references"
-      ],
-      "official_start": "https://www.sebi.gov.in/filings/public-issues.html"
-    },
-    {
-      "name": "Unimech Aerospace and Manufacturing",
-      "year": 2024,
-      "theme": "Approved reallocation and revision tracking",
-      "status": "Research queue — original source verification required",
-      "items_to_verify": [
-        "Offer structure and price from prospectus",
-        "Restated financials and valuation from RHP",
-        "Risk factors and material disclosures",
-        "Listing-day result and later journey from dated permitted data",
-        "Corporate actions and source/page references"
-      ],
-      "official_start": "https://www.sebi.gov.in/filings/public-issues.html"
+      "sources": [
+        {
+          "label": "Final prospectus",
+          "url": "https://western-carriers.com/assets/images/pdf/Western-Carriers-%28India%29-Limited-Prospectus-%28Filing%29.pdf"
+        },
+        {
+          "label": "Monitoring agency report",
+          "url": "https://nsearchives.nseindia.com/corporate/WCIL_14112024195404_WCIL_MONITORING_AGENCY_REPORT.pdf"
+        },
+        {
+          "label": "SEBI RHP filing",
+          "url": "https://www.sebi.gov.in/filings/public-issues/sep-2024/western-carriers-india-limited-rhp_86645.html"
+        }
+      ]
     }
   ]
 }

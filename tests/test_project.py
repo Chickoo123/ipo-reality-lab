@@ -7,10 +7,27 @@ from validate_data import validate, validate_records, load
 def test_published_dataset_passes_evidence_validation():
     assert validate()==[]
 
-def test_academy_has_24_core_lessons_and_three_p0_lessons():
+def test_academy_has_27_publicly_named_lessons():
     rows=load("academy.json")["modules"]
-    assert len([x for x in rows if x["id"].startswith("C")])==24
-    assert {x["id"] for x in rows if x["id"].startswith("P0")}=={"P0-a","P0-b","P0-c"}
+    assert len(rows)==27
+    assert [x["id"] for x in rows[:24]]==[f"lesson-{i:02d}" for i in range(1,25)]
+    assert [x["id"] for x in rows[24:]]==["monitoring-25","monitoring-26","monitoring-27"]
+    assert {x["priority"] for x in rows}=={"Essential","Foundational","Advanced"}
+
+def test_public_ui_does_not_expose_internal_build_codes():
+    html=(ROOT/"index.html").read_text(encoding="utf-8")
+    app=(ROOT/"app.js").read_text(encoding="utf-8")
+    for token in ["K1","K2","K3","K4","D1 Money","D2 Book","D3 Financial","D4 Checklist","D5 Spot","D6 Quiz","A–K","A-K"]:
+        assert token not in html+app, token
+
+def test_pages_workflow_enables_pages_and_publishes_only_site_assets():
+    workflow=(ROOT/".github/workflows/pages.yml").read_text(encoding="utf-8")
+    assert "enablement: true" in workflow
+    assert "path: _site" in workflow
+
+def test_public_audit_brief_and_architecture_docs_exist():
+    assert (ROOT/"docs/technical-audit-brief.md").exists()
+    assert (ROOT/"docs/architecture.md").exists()
 
 def test_every_lesson_has_required_learning_parts():
     for lesson in load("academy.json")["modules"]:
@@ -35,9 +52,12 @@ def test_demo_data_is_explicitly_fictional_and_separate():
     assert "RHP page-level cross-check remains pending" in rows[0]["research_status"]
     assert "FICTIONAL" not in rows[0]["company_name"]
 
-def test_case_candidates_are_marked_as_research_queue():
-    for c in load("cases.json")["cases"]:
-        assert "Research queue" in c["status"]
+def test_case_library_only_publishes_a_qualified_source_linked_example():
+    rows=load("cases.json")["cases"]
+    assert len(rows)==1
+    assert rows[0]["name"]=="Western Carriers (India) Limited"
+    assert "RHP page-level cross-check" in rows[0]["status"]
+    assert all(s["url"].startswith("https://") for s in rows[0]["sources"])
 
 def test_checklist_and_scam_content_exist():
     assert len(load("checklist.json")["items"])>=15

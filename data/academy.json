@@ -1,10 +1,10 @@
 {
   "modules": [
     {
-      "id": "C1",
+      "id": "lesson-01",
       "number": 1,
       "title": "What is an IPO?",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "An Initial Public Offering (IPO) is when a company offers shares to public investors and seeks admission of those shares to trading on a stock exchange.",
       "example": "Imagine a growing Indian food manufacturer wants to raise capital and let public investors become shareholders. It prepares offer documents, conducts the issue and completes listing.",
       "diagram": "Company prepares offer documents → issue opens → investors bid/apply → allotment → listing.",
@@ -35,10 +35,10 @@
       ]
     },
     {
-      "id": "C2",
+      "id": "lesson-02",
       "number": 2,
       "title": "Why do companies go public?",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "Companies may go public to raise new capital, provide an exit to some existing shareholders, improve visibility or create a market for their shares.",
       "example": "A manufacturer may use a fresh issue to fund a new plant. A founder or early investor may also sell part of their stake through an OFS.",
       "diagram": "Fresh issue → proceeds to company. OFS → proceeds to selling shareholders.",
@@ -69,10 +69,10 @@
       ]
     },
     {
-      "id": "C3",
+      "id": "lesson-03",
       "number": 3,
       "title": "Private company vs listed company",
-      "priority": "P2",
+      "priority": "Advanced",
       "plain": "A private company generally has a more limited shareholder base and its shares are not publicly traded on an exchange. A listed company has shares admitted to trading and continuing disclosure obligations.",
       "example": "A family-owned business may have a small shareholder group. After listing, public shareholders can trade its shares subject to exchange rules.",
       "diagram": "Private ownership → IPO process → listed company with public shareholders and continuing disclosures.",
@@ -103,10 +103,10 @@
       ]
     },
     {
-      "id": "C4",
+      "id": "lesson-04",
       "number": 4,
       "title": "How an IPO works in India: DRHP to listing",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "The process generally moves through draft disclosure, regulatory review, updated offer documents, issue bidding, allotment and listing. Always check the dates and steps for the specific issue.",
       "example": "A hypothetical issuer files a DRHP, updates its disclosures, files an RHP, opens the issue, completes allotment and lists on the exchange.",
       "diagram": "DRHP → regulatory review / updates → RHP → issue opens and closes → basis of allotment → listing.",
@@ -137,10 +137,10 @@
       ]
     },
     {
-      "id": "C5",
+      "id": "lesson-05",
       "number": 5,
       "title": "DRHP, RHP and final prospectus",
-      "priority": "P0",
+      "priority": "Essential",
       "plain": "These are different stages of an IPO offer document. The exact dated version matters; do not assume the first draft contains final issue terms.",
       "example": "An issuer may change its issue size, seller list or object allocations between the DRHP and RHP. K4 records the visible differences and cites both pages.",
       "diagram": "DRHP (draft) → RHP (closer to issue) → final prospectus (final offer terms).",
@@ -171,10 +171,10 @@
       ]
     },
     {
-      "id": "C6",
+      "id": "lesson-06",
       "number": 6,
       "title": "Fresh issue vs OFS",
-      "priority": "P0",
+      "priority": "Essential",
       "plain": "In a fresh issue, the company issues new shares and raises funds. In an OFS, existing shareholders sell shares and receive the proceeds.",
       "example": "A hypothetical ₹100 crore issue might contain ₹70 crore fresh issue and ₹30 crore OFS. The company receives the fresh-issue proceeds; the selling holders receive the OFS proceeds.",
       "diagram": "Total issue → fresh issue (issuer) + OFS (selling holders).",
@@ -205,10 +205,10 @@
       ]
     },
     {
-      "id": "C7",
+      "id": "lesson-07",
       "number": 7,
       "title": "Face value, premium, price band, floor price and issue price",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "Face value is a share's nominal value. Issue price is the price paid in the IPO. Premium is the amount above face value. A book-built issue may publish a price band with a floor and cap.",
       "example": "If face value is ₹2 and issue price is ₹100, the premium is ₹98. A ₹90–₹100 band has a ₹90 floor and ₹100 cap.",
       "diagram": "Face value + premium = issue price. Price band = floor price to cap price.",
@@ -239,10 +239,10 @@
       ]
     },
     {
-      "id": "C8",
+      "id": "lesson-08",
       "number": 8,
       "title": "Book building and cut-off price",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "Book building is a price-discovery process in which investors bid within the announced price band. The final price is determined under the applicable issue process after bids are received.",
       "example": "In a hypothetical ₹90–₹100 band, bids at different prices form a demand schedule. This is not the same as an exchange-traded order book after listing.",
       "diagram": "Price band → bids across prices / cut-off bids → demand schedule → final issue price.",
@@ -273,10 +273,10 @@
       ]
     },
     {
-      "id": "C9",
+      "id": "lesson-09",
       "number": 9,
       "title": "QIB, NII, Individual and Anchor investors",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "IPO categories divide bids into investor groups under applicable issue rules. Read the exact category names, reservation and allocation rules in the RHP and final exchange data.",
       "example": "A hypothetical issue may report demand separately for QIB, NII and Individual Investor categories. Use the specific terminology in the issue documents.",
       "diagram": "Investor application → category allocation → final subscription and allotment data.",
@@ -307,10 +307,10 @@
       ]
     },
     {
-      "id": "C10",
+      "id": "lesson-10",
       "number": 10,
       "title": "Lot size, bids, oversubscription and allotment",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "A lot is the minimum bid quantity specified for the issue. Oversubscription means valid demand exceeds shares available in a category. Allotment follows the applicable basis after bidding closes.",
       "example": "If lot size is 20 shares and the bid price is ₹100, one lot represents ₹2,000 before any other applicable rules.",
       "diagram": "Bid quantity → category demand → issue closes → basis of allotment → allotment result.",
@@ -341,10 +341,10 @@
       ]
     },
     {
-      "id": "C11",
+      "id": "lesson-11",
       "number": 11,
       "title": "ASBA and UPI application process",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "ASBA means Application Supported by Blocked Amount. Under the process, the application amount is blocked in the investor's bank account. UPI can be an application mechanism where permitted.",
       "example": "An applicant uses a supported bank or broker interface, checks bid details and approves the mandate in their own UPI app. An unsolicited third-party collect request is not an official route.",
       "diagram": "Application submitted → funds blocked / mandate → allotment → debit for allotted shares or release of block.",
@@ -375,10 +375,10 @@
       ]
     },
     {
-      "id": "C12",
+      "id": "lesson-12",
       "number": 12,
       "title": "Registrar, merchant banker, lead manager and stock exchange",
-      "priority": "P2",
+      "priority": "Advanced",
       "plain": "An IPO involves appointed intermediaries with different roles. Merchant bankers manage the issue, registrars handle application/allotment work, and exchanges provide market infrastructure and disclosures.",
       "example": "Check the contacts and responsibilities disclosed in the offer document instead of trusting an unsolicited caller who claims to represent an intermediary.",
       "diagram": "Issuer + merchant banker / lead manager + registrar + stock exchange + banking / depository participants.",
@@ -409,10 +409,10 @@
       ]
     },
     {
-      "id": "C13",
+      "id": "lesson-13",
       "number": 13,
       "title": "GMP, listing gain, listing loss and lock-in",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "GMP is an unofficial market observation outside official exchange disclosures. Listing gain/loss compares listing price with issue price. Lock-in rules restrict transfers for specified holders and periods.",
       "example": "A hypothetical share issued at ₹100 and listed at ₹110 has a 10% listing-day price difference. An unofficial GMP quote is not an exchange price.",
       "diagram": "Issue price → listing price → dated historical comparison; GMP remains a separate unofficial observation.",
@@ -443,10 +443,10 @@
       ]
     },
     {
-      "id": "C14",
+      "id": "lesson-14",
       "number": 14,
       "title": "Revenue, EBITDA, EBIT, PAT and EPS",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "Revenue is income from operations. EBITDA is earnings before interest, tax, depreciation and amortisation. EBIT includes depreciation and amortisation but excludes interest and tax. PAT is profit after tax. EPS is profit attributable to each share under the stated share-count basis.",
       "example": "A hypothetical manufacturer reports revenue, operating expenses, depreciation, interest and tax. Each measure answers a different question.",
       "diagram": "Revenue → operating costs → EBITDA → depreciation → EBIT → interest / tax → PAT → EPS.",
@@ -477,10 +477,10 @@
       ]
     },
     {
-      "id": "C15",
+      "id": "lesson-15",
       "number": 15,
       "title": "P/E, P/B and EV/EBITDA",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "Valuation ratios relate a company's price or enterprise value to a financial measure. They are meaningful only when inputs, dates, accounting basis and peer context are clear.",
       "example": "Compare a hypothetical issuer with the peers named in the RHP's Basis for Issue Price section. Record each peer's source and date.",
       "diagram": "Share price / market capitalisation + financial measure → valuation multiple.",
@@ -511,10 +511,10 @@
       ]
     },
     {
-      "id": "C16",
+      "id": "lesson-16",
       "number": 16,
       "title": "ROE, ROCE, debt/equity and interest coverage",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "These ratios describe return on equity, return on capital, leverage and ability to meet interest costs. Definitions can differ, so reproduce the issuer's stated calculation where possible.",
       "example": "A capital-heavy manufacturer and an asset-light software company may have very different financial structures. Compare like with like.",
       "diagram": "Profit / EBIT / debt values → ratio using the stated denominator and average-balance convention.",
@@ -545,10 +545,10 @@
       ]
     },
     {
-      "id": "C17",
+      "id": "lesson-17",
       "number": 17,
       "title": "Operating cash flow, free cash flow and working capital",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "Profit is calculated using accounting rules; operating cash flow shows cash generated or used by operations. Free cash flow is often operating cash flow less capital expenditure, but the definition must be stated. Working capital supports day-to-day operations.",
       "example": "A wholesaler may report sales but wait months to collect from customers. Profit and cash flow can therefore move differently.",
       "diagram": "Sales → receivables / inventory → cash collection → operating cash flow → capex → illustrative free cash flow.",
@@ -579,10 +579,10 @@
       ]
     },
     {
-      "id": "C18",
+      "id": "lesson-18",
       "number": 18,
       "title": "Receivables, inventory and customer concentration",
-      "priority": "P2",
+      "priority": "Advanced",
       "plain": "Receivables are amounts customers owe the company. Inventory is stock held for sale or production. Customer concentration shows how much revenue depends on a small number of customers.",
       "example": "A supplier receiving 55% of revenue from one customer may depend heavily on that buyer. The percentage must be extracted from the offer document, not guessed.",
       "diagram": "Sales → customer invoices → receivables → collections; inventory → production / sale → cost of goods sold.",
@@ -609,10 +609,10 @@
       ]
     },
     {
-      "id": "C19",
+      "id": "lesson-19",
       "number": 19,
       "title": "Risk factors, contingent liabilities and material litigation",
-      "priority": "P2",
+      "priority": "Advanced",
       "plain": "The risk-factor section identifies risks disclosed by the issuer. Contingent liabilities and litigation disclosures describe potential obligations or legal matters as presented in the offer document.",
       "example": "An issuer may disclose tax disputes, customer dependency, regulatory approvals or pending litigation. Record parties, amounts and status exactly as disclosed.",
       "diagram": "Risk factor / legal matter → disclosed facts → amount / parties / status → source page.",
@@ -639,10 +639,10 @@
       ]
     },
     {
-      "id": "C20",
+      "id": "lesson-20",
       "number": 20,
       "title": "Related-party transactions, promoter holdings and lock-in",
-      "priority": "P1",
+      "priority": "Foundational",
       "plain": "Related-party transactions are dealings with connected parties under applicable definitions. Promoter holding and lock-in details describe ownership and transfer restrictions.",
       "example": "A company may rent property from a promoter-group entity or buy goods from a related party. Inspect transaction scale, counterparties and terms.",
       "diagram": "Promoters / group entities ↔ issuer: transactions, ownership, approvals and restrictions.",
@@ -669,10 +669,10 @@
       ]
     },
     {
-      "id": "C21",
+      "id": "lesson-21",
       "number": 21,
       "title": "Objects of the issue and use of proceeds",
-      "priority": "P0",
+      "priority": "Essential",
       "plain": "The Objects of the Issue section explains the stated purposes for which fresh-issue proceeds are proposed to be used. It becomes the baseline for later proceeds tracking.",
       "example": "An issuer may allocate proceeds to repay debt, buy equipment or fund working capital. Capture exact RHP wording, amount and disclosed schedule.",
       "diagram": "RHP objects and amounts → frozen baseline → quarterly reports → utilisation / balance / revision.",
@@ -703,10 +703,10 @@
       ]
     },
     {
-      "id": "C22",
+      "id": "lesson-22",
       "number": 22,
       "title": "SME IPO vs Mainboard IPO",
-      "priority": "P2",
+      "priority": "Advanced",
       "plain": "Mainboard and SME issues can differ in platform, eligibility and continuing obligations. The applicable rules must be checked for the issue and date.",
       "example": "A smaller issuer planning an SME listing must be read under the SME platform requirements applicable at its filing date; do not assume mainboard rules apply identically.",
       "diagram": "Exchange platform → applicable eligibility / issue / market-making / disclosure rules.",
@@ -741,10 +741,10 @@
       ]
     },
     {
-      "id": "C23",
+      "id": "lesson-23",
       "number": 23,
       "title": "IPO application mistakes and allotment misconceptions",
-      "priority": "P2",
+      "priority": "Advanced",
       "plain": "Common mistakes include using unverified links, applying through third parties, misunderstanding UPI mandates, entering wrong bid details or assuming oversubscription guarantees allotment.",
       "example": "A message promises guaranteed allotment if the applicant sends a fee to a personal UPI ID. That is a red flag; use official channels.",
       "diagram": "Check issuer / symbol / category / bid / lot → submit through permitted channel → verify bid / allotment.",
@@ -775,10 +775,10 @@
       ]
     },
     {
-      "id": "C24",
+      "id": "lesson-24",
       "number": 24,
       "title": "Post-listing tracking and quarterly disclosures",
-      "priority": "P0",
+      "priority": "Essential",
       "plain": "After listing, issuers continue publishing periodic disclosures. Use official filings to follow financial results, use of issue proceeds and other material updates.",
       "example": "A listed issuer may publish monitoring agency reports or statements of deviation after the IPO. Link each quarter's report to the original RHP object baseline.",
       "diagram": "RHP allocation → quarterly monitoring report / deviation statement → cumulative utilisation → evidence ledger.",
@@ -813,9 +813,9 @@
       ]
     },
     {
-      "id": "P0-a",
+      "id": "monitoring-25",
       "title": "What a monitoring agency is — and what it does not do",
-      "priority": "P0",
+      "priority": "Essential",
       "plain": "A monitoring agency reports on utilisation of issue proceeds for certain public issues under the applicable requirements. Its report is evidence of what it checked and stated; it is not automatically a full audit of project outcomes.",
       "example": "A hypothetical equipment project report may show amount utilised, pending balance, deviations and explanations. Read the report's own scope and caveats.",
       "diagram": "RHP object → quarterly proceeds data → monitoring agency report → disclosed comments / deviations → evidence-linked ledger.",
@@ -838,12 +838,13 @@
           "answer": 1,
           "explanation": "A monitoring report may disclaim judgment on project quality, costs or outcomes."
         }
-      ]
+      ],
+      "number": 25
     },
     {
-      "id": "P0-b",
+      "id": "monitoring-26",
       "title": "How to read one monitoring agency report",
-      "priority": "P0",
+      "priority": "Essential",
       "plain": "Read a report in a repeatable order: issuer and quarter, object mapping, amount utilised, unspent amount, deviations, revisions, agency comments and board comments.",
       "example": "Take one filed quarterly report, identify a capex object and map it to the RHP allocation. Record the exact page for every number.",
       "diagram": "Identify report → match object → extract amount → verify page → record comment → second-person review.",
@@ -867,12 +868,13 @@
           "answer": 0,
           "explanation": "Traceability requires the original report and exact page."
         }
-      ]
+      ],
+      "number": 26
     },
     {
-      "id": "P0-c",
+      "id": "monitoring-27",
       "title": "Why 'no deviation' does not mean 'on track'",
-      "priority": "P0",
+      "priority": "Essential",
       "plain": "Deviation status and schedule progress are different questions. An object can have no reported deviation and still be delayed, have unspent funds or have a revised timeline.",
       "example": "A hypothetical plant-expansion object may remain within its disclosed purpose while its commissioning date moves. Display use-of-proceeds status and schedule status separately.",
       "diagram": "No deviation? → inspect utilisation → inspect schedule → inspect balance → inspect revised timeline / approval.",
@@ -895,34 +897,35 @@
           "answer": 1,
           "explanation": "Without a disclosed schedule there is no basis for ahead/on-time/behind classification."
         }
-      ]
+      ],
+      "number": 27
     }
   ],
   "learning_paths": {
     "beginner": [
-      "C1",
-      "C2",
-      "C4",
-      "C6",
-      "C10",
-      "C11",
-      "C13",
-      "C23"
+      "lesson-01",
+      "lesson-02",
+      "lesson-04",
+      "lesson-06",
+      "lesson-10",
+      "lesson-11",
+      "lesson-13",
+      "lesson-23"
     ],
     "informed": [
-      "C5",
-      "C21",
-      "P0-a",
-      "P0-b",
-      "P0-c",
-      "C24",
-      "C14",
-      "C15",
-      "C16",
-      "C17",
-      "C18",
-      "C19",
-      "C20"
+      "lesson-05",
+      "lesson-21",
+      "monitoring-25",
+      "monitoring-26",
+      "monitoring-27",
+      "lesson-24",
+      "lesson-14",
+      "lesson-15",
+      "lesson-16",
+      "lesson-17",
+      "lesson-18",
+      "lesson-19",
+      "lesson-20"
     ]
   }
 }
