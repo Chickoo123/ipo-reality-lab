@@ -152,8 +152,8 @@ def validate_records(records, source_registry, policy):
             check_evidence(seller.get("evidence"), "seller")
 
         for change in ipo.get("document_changes", []):
-            check_evidence(change.get("left_evidence"), "K4 left-side source")
-            check_evidence(change.get("right_evidence"), "K4 right-side source")
+            check_evidence(change.get("left_evidence"), "document comparison left-side source")
+            check_evidence(change.get("right_evidence"), "document comparison right-side source")
 
     return errors
 
