@@ -1,46 +1,46 @@
-# IPO research intake template
+# Issuer research intake template
 
-Use one copy of this template per issuer. Do not fill a field from memory or a secondary source when the required official filing is missing.
+Use one copy per issuer. Do not fill a field from memory or an unverified secondary source.
 
-## Issuer / issue metadata
-- Stable IPO record ID:
-- Exact issuer legal name:
+## Issuer metadata
+- Stable record ID:
+- Exact legal name:
 - Mainboard / SME:
 - Issue status:
 - Last checked (YYYY-MM-DD):
 - Reviewer:
 
 ## Source-document register
-For every document: internal ID, exact title, document type (DRHP / RHP / prospectus / monitoring report / statement of deviation / quarterly filing), filing date, source institution, official URL, page count, download/review date.
+For each DRHP, RHP, prospectus, monitoring-agency report, statement of deviation or later filing, record the exact title, document type, filing date, source institution, official URL, page count and review date.
 
-## Issue structure (RHP / prospectus)
-- Gross issue proceeds (with page):
-- Fresh issue (with page):
-- OFS (with page):
-- Net proceeds (with page):
-- Reconciliation and unit check:
+## Issue structure
+- Gross issue proceeds and source page:
+- Fresh issue and source page:
+- Offer for Sale and source page:
+- Net proceeds and source page:
+- Unit conversion and reconciliation:
 
-## Objects of the Issue (immutable RHP baseline)
-For each object: exact wording, allocation, unit, RHP document ID, page, disclosed deployment schedule / no schedule disclosed.
+## Objects of the issue
+For each object: exact wording, allocation, unit, baseline document ID, printed page and disclosed deployment schedule. Record explicitly when no schedule is disclosed.
 
-## Quarterly monitoring reports
-For each reporting period and object: report ID, period, filing date, cumulative utilisation, unspent amount, deviation status and exact wording, agency comments, board comments, page references.
+## Periodic utilisation reports
+For each period and object: report ID, period end, filing date, cumulative utilisation, unspent amount, deviation wording, agency comments, board comments and exact page.
 
 ## Revisions
-Record old and new allocation / timeline, effective quarter/date, approval route (board / shareholders / other as disclosed), report ID and page. Never overwrite the original RHP baseline.
+Record old and new allocation / timetable, effective date or period, approval route as disclosed, source document and page. Never overwrite the original baseline.
 
-## K3 seller data
-Seller name, disclosed holder type, shares offered, WACA, WACA basis (including bonus-share basis if disclosed), price/WACA multiple if meaningful, caveats, source document/page.
+## Selling shareholder disclosures
+Record seller name and holder type, shares offered, weighted-average acquisition cost, calculation basis, caveats and source document/page.
 
-## K4 document changes
-Field, DRHP value/page, RHP value/page, prospectus value/page, exact table/section context, reviewer conclusion. Record visible changes only; never infer the reason.
+## Document-version comparison
+Record the field, earlier and later values, document types, both page references, exact section/table context and reviewer notes. Record visible differences only.
 
 ## Review checklist
-- [ ] Two independent extractions completed
+- [ ] Two independent extraction passes completed
 - [ ] Units and dates reconciled
-- [ ] All values checked against original pages
-- [ ] Baseline objects reconcile to net proceeds
+- [ ] All material values checked against original pages
+- [ ] Object allocations reconcile to net proceeds
 - [ ] Utilisation sequence and revisions checked
-- [ ] Every displayed number has document ID and page
+- [ ] Every displayed material figure has a document and page reference
 - [ ] No unsupported claim or legal conclusion added
-- [ ] Human reviewer sign-off and last-checked date recorded
+- [ ] Reviewer sign-off and review date recorded

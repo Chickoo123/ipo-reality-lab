@@ -1,46 +1,40 @@
-# Research methodology and evidence policy
+# Research methodology
 
 ## Source hierarchy
-1. Issuer DRHP, RHP and final prospectus: offer structure, business, risk factors, financials, objects, seller information and IPO disclosures.
-2. Monitoring agency reports and statements of deviation: reported proceeds utilisation by period.
-3. Official exchange and issuer filings: final subscription data, listing and later disclosures.
-4. Registrar publications: basis of allotment and allotment information.
+
+1. Issuer DRHP, RHP and final prospectus: issue structure, business, risk factors, financial statements, objects and seller disclosures.
+2. Monitoring-agency reports and statements of deviation: reported utilisation of issue proceeds for the period covered.
+3. Official exchange and issuer filings: issue notices, subscription / listing disclosures and later company information.
+4. Registrar publications: basis of allotment and allotment information where available.
 5. SEBI rules, circulars and investor resources: regulatory and educational context.
-6. Secondary sources: discovery only; never sole evidence for a material company fact.
+6. Secondary sources: discovery only; never the sole evidence for a material company fact.
 
-When sources disagree, retain both, identify dates and explain the discrepancy. Do not silently select a convenient value.
-
-## Double extraction
-Two independent extraction passes should capture all material values. Compare:
-- missing fields and numerical differences,
-- units and date / quarter labels,
-- page-reference mismatches,
-- object-mapping mismatches,
-- revisions and their approval routes.
-
-A human reviewer must resolve discrepancies against the original PDF.
+When sources disagree, retain both versions, identify dates and explain the discrepancy. Do not silently choose the more convenient value.
 
 ## Evidence rules
-- Every material number carries document ID, page, filing date, source type and review date.
-- A number without a source page is not publishable.
-- Keep original RHP allocations immutable.
-- Record changes as new revision events with the approval route shown in the filing.
-- Cumulative utilisation cannot fall unless a recorded revision explains it.
+
+- Every material figure carries a document ID, filing date, source URL and printed page reference.
+- A figure without a source location is not publishable.
+- Preserve the original offer-document allocation as the baseline. Record later revisions separately.
+- Compare cumulative utilisation only across comparable reporting periods and definitions.
 - Do not describe unknown data as zero.
-- Say "not found by us as of YYYY-MM-DD", not "not filed".
-- Do not use "diversion", "misuse" or "non-compliance" unless the official filing itself uses that language.
-- Monitoring agency caveats appear beside figures they qualify.
-- No disclosed schedule means K2 status "No schedule disclosed".
-- K3 price/WACA multiples show WACA basis and relevant bonus-share / fully diluted caveats.
-- K4 records only document-visible differences; never infer the reason.
+- Say “not located in our review as of [date]”, not “not filed”, unless filing status has been independently confirmed.
+- Do not use “diversion”, “misuse” or “non-compliance” unless an authoritative source supports that wording.
+- Place monitoring-agency limitations beside the figures they qualify.
+- Where no deployment timetable is disclosed, do not invent an ahead / on-time / delayed verdict.
+- Show the basis and caveats for weighted-average acquisition-cost disclosures.
+- Document comparisons record visible changes only; do not infer reasons for changes.
 
-## Ratios
-Show formula and inputs beside every ratio. Preserve the source's own calculation basis. If IPO Reality Lab calculates a ratio, identify it as an independent calculation and cite all source inputs. Do not publish universal good/bad ranges. Interpret within sector, peer source/date, history and business model.
+## Financial ratios
 
-## GMP and price data
-No live GMP. GMP is unofficial, source-dependent and not a reliable prediction. Any historical GMP item would need a named source, timestamp, method and an explicit unofficial label.
+Show each formula and input. Preserve the issuer's disclosed calculation basis. If IPO Lab calculates a ratio independently, label it as a calculation and cite every source input. Avoid universal good/bad thresholds. Interpret ratios within the issuer's sector, business model, peer set, dates and historical trend.
 
-SEBI's 8 May 2026 circular prescribes a 30-day lag for sharing and usage of market-price data for educational and awareness purposes, effective 1 July 2026. It is not a blanket embargo on offer documents. Data remains disabled until both source permissions and the legal safeguards are approved. The NISM one-day exception is not available to IPO Reality Lab.
+## Unofficial GMP and market-price data
 
-## Missingness
-Use explicit states such as `not_found_by_us`, `not_disclosed`, `not_applicable` and `awaiting_source_review`. Do not encode an unknown as zero.
+No live GMP feed is provided. GMP is unofficial, source-dependent and is not a reliable prediction of listing performance. A future historical GMP study would require a named source, timestamps, methodology, attribution and legal review.
+
+SEBI circular HO/47/17/12(11)2025-MRD-POD3/I/11107/2026 dated 8 May 2026 prescribes a 30-day lag for sharing and usage of market-price data for educational and awareness purposes, effective 1 July 2026. The one-day simulation-lab exception is specific to NISM. This is not a blanket embargo on offer documents. Market-price data remains disabled unless source permissions and legal safeguards are documented.
+
+## Missing data
+
+Use explicit states such as `not_found_by_us`, `not_disclosed`, `not_applicable` and `awaiting_source_review`. Do not encode unknowns as zero.

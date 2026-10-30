@@ -1,4 +1,4 @@
-# IPO Reality Lab — Neon Night design system
+# IPO Lab — Neon Night design system
 
 ## Direction
 

@@ -1,30 +1,34 @@
-# Run and deploy IPO Reality Lab
+# Run and deploy IPO Lab
 
-## Windows: one-click local run
+## Run locally on Windows
 
-1. Extract the ZIP fully.
-2. Open the extracted `ipo-reality-lab-github-ready` folder.
-3. Double-click `run-local.bat`.
-4. Your browser should open `http://localhost:8000`.
+1. Clone or download the repository.
+2. Install Python 3.10 or newer and enable **Add Python to PATH**.
+3. Double-click `run-local.bat` from the repository root.
+4. The browser opens at `http://localhost:8000`.
 
-Keep the terminal window open while using the site. Close that window to stop the local server.
+Keep the terminal window open while using the application. Press Ctrl+C in that window to stop the server.
 
-If Windows says Python is missing, install Python 3.10+ from https://www.python.org/downloads/ and enable **Add Python to PATH** during installation.
+Do not open `index.html` directly using a `file://` URL. The browser loads JSON files using `fetch()`, which requires an HTTP server.
 
-Do not double-click `index.html`. The app loads JSON files using `fetch()`, and browsers block that request from a `file://` page. Use `run-local.bat` or an HTTPS deployment.
+## Run and validate from a terminal
 
-## GitHub: deploy the site
+```bash
+python -m pip install -r requirements.txt
+python scripts/validate_data.py
+python -m pytest -q
+node --check app.js
+python serve_local.py
+```
 
-1. Open your IPO Reality Lab GitHub repository.
-2. Upload the **contents** of this folder to the repository root: `index.html`, `app.js`, `styles.css`, `data/`, `docs/`, `scripts/`, `tests/` and `.github/`.
-3. Commit to the `main` branch.
-4. Open **Settings → Pages**.
-5. Under **Build and deployment → Source**, select **GitHub Actions**.
-6. The included `.github/workflows/pages.yml` workflow runs validation and tests, then deploys the site.
-7. Open the deployment URL shown in the Actions run or Settings → Pages.
+## GitHub Pages
 
-Every push to `main` triggers validation and deployment. A failed validation/test blocks publishing.
+The workflow at `.github/workflows/pages.yml` validates issuer data, runs the automated test suite and JavaScript syntax check, prepares a small deployment directory containing only the website and required public JSON data, and publishes it to GitHub Pages.
 
-## Existing repository caution
+**One-time repository setup:** open **Settings → Pages** and select **GitHub Actions** under “Build and deployment → Source”. The workflow cannot grant itself the elevated permission needed to create a Pages site. After this one-time setting is saved, pushes to `main` trigger deployment.
 
-The workflow assumes that the project lives in the repository root and the deployment branch is `main`. If your repository uses another default branch or a `docs/` subfolder, adjust the workflow before enabling deployment. Do not overwrite unrelated files in an existing repository.
+A failing validator or test blocks publication.
+
+## Local repository workflow
+
+Use a feature branch for changes. Run the validator and tests before committing. Review the Git diff to ensure no credentials, private working files or unverified issuer claims are included. Merge to `main` only after review.

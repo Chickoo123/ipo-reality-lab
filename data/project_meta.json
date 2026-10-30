@@ -1,10 +1,9 @@
 {
-  "name": "IPO Reality Lab",
-  "tagline": "Understand the IPO. Decode the company. Follow the money.",
-  "version": "1.0.0",
+  "name": "IPO Lab",
+  "tagline": "Understand the issue. Research the issuer. Follow the proceeds.",
+  "version": "1.1.0",
   "last_build": "2026-10-30",
-  "status": "Full A–K interactive application; one initial evidence-backed Western Carriers issuer record added. The 10-IPO Phase 1 target, original RHP page-level cross-check and browser end-to-end QA remain outstanding.",
+  "status": "Static research and education website with 27 learning modules, six interactive tools and one initial source-linked issuer example. Broader issuer coverage, the Western Carriers RHP page-level cross-check and browser/accessibility release testing remain outstanding.",
   "disclaimer": "Educational information from public filings. Not investment advice or a recommendation.",
-  "issuer_records_current": 1,
-  "phase1_target_issuer_records": 10
+  "issuer_records_current": 1
 }

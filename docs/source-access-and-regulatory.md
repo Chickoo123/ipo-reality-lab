@@ -1,33 +1,34 @@
-# Official-source access and regulatory controls
+# Official-source access and regulatory safeguards
 
 ## SEBI
-Circular `HO/47/17/12(11)2025-MRD-POD3/I/11107/2026`, dated 8 May 2026, sets a 30-day lag for sharing and usage of market-price data for educational and awareness purposes, effective 1 July 2026. It also includes safeguards around monetary incentives, legal agreements, due diligence and audit trails. The one-day exception is limited to NISM's simulation lab; this project does not claim that exception.
 
-The price-data lag is not a blanket delay on RHPs, prospectuses or offer documents.
+SEBI circular HO/47/17/12(11)2025-MRD-POD3/I/11107/2026, dated 8 May 2026, prescribes a 30-day lag for sharing and usage of market-price data for educational and awareness purposes, effective 1 July 2026. The circular also requires appropriate legal agreements, due diligence and an audit trail for relevant data-sharing arrangements.
 
-Official circular:
-https://www.sebi.gov.in/web/?file=https%3A%2F%2Fwww.sebi.gov.in%2Fsebi_data%2Fattachdocs%2Fmay-2026%2F1778242522289.pdf
+The one-day simulation-lab exception is specific to the National Institute of Securities Markets (NISM). IPO Lab is not NISM and does not claim this exception.
+
+The 30-day restriction concerns market-price data for educational and awareness activities. It is not a blanket delay on offer documents, RHPs, prospectuses or issuer filings.
+
+Official circular: https://www.sebi.gov.in/sebi_data/attachdocs/may-2026/1778242522289.pdf
 
 ## NSE
-NSE Terms of Use prohibit systematic or automated data collection, including scraping, data mining, extraction and harvesting. They also restrict reproduction / redistribution of website content without permission. The current project therefore uses official links and manually reviewed facts. No scraper is included.
 
-Terms:
-https://www.nseindia.com/static/nse-terms-of-use
+NSE's Terms of Use restrict systematic or automated collection, including scraping, data mining, extraction and harvesting, and restrict reproduction / redistribution without permission. IPO Lab links to official disclosures and records manually reviewed facts. It does not scrape NSE pages.
+
+Terms: https://www.nseindia.com/static/nse-terms-of-use
 
 ## BSE
-BSE public issue pages are linked through the official BSE website and SEBI's curated links page. Exact BSE terms for automated access to the relevant IPO pages are not yet confirmed in this project. Automation stays disabled.
 
-SEBI curated links:
-https://www.sebi.gov.in/Curation_Links_for_Securities_Market_Data.html
+IPO Lab links to BSE public-issues pages and official disclosures. Automated access remains disabled until applicable BSE terms, permissions and licensing requirements have been reviewed.
 
-BSE:
-https://www.bseindia.com/
+BSE: https://www.bseindia.com/
 
-## What "integration" means in this version
-- Structured source registry and links to official institutions.
-- Document metadata and source IDs in IPO records.
-- Page-level citations and last-reviewed metadata.
-- Manual ingestion and double-entry validation.
-- No unauthorised API or web scraping.
+## Current source integration
 
-Public accessibility does not automatically grant bulk-copy, storage or redistribution rights.
+- Official SEBI, NSE and BSE source links.
+- Structured source registry and issuer-document metadata.
+- Page-level references and review dates for recorded figures.
+- Manual document ingestion and double-extraction checks.
+- No claim of authenticated live exchange API integration.
+- No unauthorised scraping or mirroring of offer-document PDFs.
+
+Public accessibility does not automatically grant rights to bulk collect, store or redistribute data.

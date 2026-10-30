@@ -1,44 +1,55 @@
-# Portfolio case study — IPO Reality Lab
+# Portfolio case study — IPO Lab
 
-## One-line description
-An evidence-first Indian IPO research and investor-education platform that connects offer-document disclosures to post-listing proceeds utilisation, while teaching IPO mechanics through interactive tools.
+## Overview
+
+IPO Lab is an evidence-led Indian IPO research and investor-education platform. It connects original offer-document disclosures with company financial analysis, later reported proceeds utilisation and practical learning tools.
 
 ## Problem
-Most retail IPO discovery products concentrate on calendars, subscription, allotment and unofficial GMP. These are useful but do not, by themselves, teach a user how to read an RHP or follow the company's stated use of fresh-issue proceeds after listing. Generic financial education is also disconnected from a repeatable document-level data model.
 
-## Product approach
-Build three connected experiences:
-1. **Track:** factual IPO information and links to original offer documents and exchange disclosures.
-2. **Research:** Money Trail, Cash Reality Test and source-linked Promise vs Proof / Proceeds Clock data views.
-3. **Learn:** a 24-topic IPO Academy, knowledge checks, simulators, case-study research queue and investor-protection learning.
+Retail IPO information is often fragmented across calendars, subscription tables, offer documents, exchange disclosures and issuer reports. Users may see issue statistics without understanding how to read offer documents, where fresh-issue money is meant to go or what later utilisation reports actually say.
 
-## Data / analytics contribution
-- Designed an IPO → RHP object → quarterly report → utilisation → evidence data model.
-- Preserved the original RHP object allocation as an immutable baseline.
-- Defined quarter-to-quarter validation for cumulative utilisation, approved revisions and allocation reconciliation.
-- Made every material fact require a document ID and page reference.
-- Separated unavailable, not disclosed and not applicable values rather than encoding unknowns as zero.
-- Added formula-led financial analysis instead of a black-box investment score.
-- Designed two-pass extraction and human review before publication.
+## Product
+
+- Searchable issuer records with links to official offer documents and disclosures.
+- Clear separation of fresh issue proceeds and Offer for Sale proceeds.
+- Source-linked research on stated use of proceeds, later utilisation and disclosed revisions.
+- Financial ratio tools with visible formulas and hypothetical inputs.
+- Seller and offer-document disclosure analysis.
+- Learning modules, interactive simulators, due-diligence guidance and scam-awareness scenarios.
+
+## Data and analytics contribution
+
+- Designed an issuer → offer document → object → reporting period → utilisation → evidence model.
+- Preserved original offer-document allocations as baselines.
+- Added validation for issue split, net proceeds, object allocations, report evidence, cumulative utilisation and documented revisions.
+- Required page-level sources for material values.
+- Distinguished missing, undisclosed and inapplicable information.
+- Used transparent formula-based ratios rather than a black-box investment score.
+- Established a two-pass extraction and human review process.
 
 ## Responsible product decisions
-- No Subscribe/Avoid recommendations, listing predictions or best-IPO ranking.
-- No live GMP feed.
-- No unauthorised automated scraping of exchange websites.
-- SEBI education price-data policy is centralised and market-price data is disabled until licensing / legal review.
-- Simulated inputs are visibly labelled; one Western Carriers source-backed proceeds record is present, and the wider issuer dataset is being populated only after source verification.
 
-## Current implementation evidence
-- 27 Academy lessons (24 core modules + 3 monitoring-agency P0 lessons).
-- Six interactive learning tools (D1–D6).
-- 17-point due-diligence checklist.
-- Seven investor-protection / scam-awareness patterns.
-- Eleven case-study research candidates.
-- Official-source registry for SEBI, NSE and BSE.
-- Data validator and automated test suite.
+- No subscribe / avoid recommendations or personal investment advice.
+- No listing-price predictions or guaranteed returns.
+- No live unofficial GMP feed.
+- No unauthorised automated exchange scraping.
+- Educational market-price data remains disabled pending source permissions and compliance review.
+- Simulated financial and book-building inputs are labelled hypothetical.
 
-## Honest completion boundary
-The application and learning interactions are implemented. One initial issuer record has been source-reviewed, with the RHP page-level cross-check still pending. This is not yet a fully populated IPO research database. The 11 case cards remain research candidates. Western Carriers has an initial proceeds snapshot with prospectus and monitoring-report page references; its RHP cross-check and full business / valuation / listing-journey case write-up remain pending. Browser end-to-end QA and public deployment are still release tasks.
+## Current implementation
 
-## Resume / portfolio bullet (use only with this status)
-Designed and built an evidence-first Indian IPO research and education platform with a 27-module learning academy, six interactive simulators, official-source registry, source-page data model and automated validation rules for tracking IPO proceeds — with no investment recommendations and no fabricated issuer data.
+- 27 learning modules.
+- Six interactive educational tools.
+- A 17-item offer-document review checklist.
+- Seven investor-protection and scam-awareness patterns.
+- Official-source registry for SEBI, NSE, BSE, issuers and reporting institutions.
+- Python data validator and automated tests.
+- GitHub Actions validation and static-site deployment workflow.
+
+## Current coverage boundary
+
+One initial Western Carriers (India) Limited example is recorded from its final prospectus and first monitoring-agency report. The original RHP page-level cross-check remains pending. This is not a complete issuer case study or broad IPO database. Additional issuer coverage, later quarters, browser testing and accessibility review remain outstanding.
+
+## Portfolio description
+
+Designed and built an evidence-led Indian IPO research and education platform with source-linked disclosure analysis, transparent financial tools, a 27-module academy and automated data-integrity checks for post-IPO proceeds research.
