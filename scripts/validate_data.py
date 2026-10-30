@@ -157,8 +157,39 @@ def validate_records(records, source_registry, policy):
 
     return errors
 
+def validate_json_urls(value, path="$"):
+    """Validate every explicit URL field in a JSON document."""
+    errors = []
+    if isinstance(value, dict):
+        for key, child in value.items():
+            child_path = f"{path}.{key}"
+            if str(key).lower() in {"url", "href", "uri"} and child is not None:
+                if not isinstance(child, str) or not child.startswith("https://"):
+                    errors.append(f"{child_path}: URL must use HTTPS")
+            errors.extend(validate_json_urls(child, child_path))
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            errors.extend(validate_json_urls(child, f"{path}[{index}]"))
+    return errors
+
+
+def validate_all_json_urls():
+    errors = []
+    for file_path in sorted(DATA.glob("*.json")):
+        try:
+            payload = json.loads(file_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            errors.append(f"{file_path.name}: cannot read valid JSON: {exc}")
+            continue
+        errors.extend(validate_json_urls(payload, file_path.name))
+    return errors
+
+
 def validate():
-    return validate_records(load("ipo_records.json"), load("source_registry.json"), load("regulatory_policy.json"))
+    return (
+        validate_records(load("ipo_records.json"), load("source_registry.json"), load("regulatory_policy.json"))
+        + validate_all_json_urls()
+    )
 
 if __name__ == "__main__":
     errors = validate()
