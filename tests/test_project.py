@@ -187,3 +187,10 @@ def test_dom_helpers_are_distinct_and_collections_use_plural_helper():
     # A single-element `$()` result never has array methods.
     misuse = re.findall(r'(?<![\w$])\$\("[^"]+"\)\.(?:forEach|map|filter|some|every|reduce)\(', js)
     assert not misuse, misuse
+
+
+def test_quiz_level_is_escaped_before_html_insertion():
+    """CodeQL js/xss-through-dom: the <select> value must not reach innerHTML raw."""
+    js = (ROOT / "app.js").read_text(encoding="utf-8")
+    assert "${level.toUpperCase()}" not in js
+    assert "${esc(level.toUpperCase())}" in js

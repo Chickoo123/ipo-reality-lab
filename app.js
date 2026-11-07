@@ -237,7 +237,7 @@ function wireQuiz(){
   const show=()=>{
    const host=$("#quiz-area");
    if(at>=state.quiz.length){host.innerHTML=`<h3>Quiz completed</h3><p>You answered ${score} of ${state.quiz.length} correctly. Review the explanations and the Academy lessons; this score is not an assessment of investment suitability.</p><button id="quiz-again" class="button primary">Try again</button>`;$("#quiz-again").addEventListener("click",()=>$("#quiz-start").click());return}
-   const q=state.quiz[at];host.innerHTML=`<small class="eyebrow">${level.toUpperCase()} · QUESTION ${at+1} / ${state.quiz.length}</small><p><b>${esc(q.question)}</b></p><small>Lesson: ${esc(q.topic)}</small><div>${q.options.map((o,j)=>`<button class="quiz-option" data-a="${j}">${esc(o)}</button>`).join("")}</div><div id="quiz-feedback" class="quiz-feedback" aria-live="polite"></div>`;
+   const q=state.quiz[at];host.innerHTML=`<small class="eyebrow">${esc(level.toUpperCase())} · QUESTION ${at+1} / ${state.quiz.length}</small><p><b>${esc(q.question)}</b></p><small>Lesson: ${esc(q.topic)}</small><div>${q.options.map((o,j)=>`<button class="quiz-option" data-a="${j}">${esc(o)}</button>`).join("")}</div><div id="quiz-feedback" class="quiz-feedback" aria-live="polite"></div>`;
    host.querySelectorAll(".quiz-option").forEach(b=>b.addEventListener("click",()=>{const out=$("#quiz-feedback");if(out.dataset.done)return;const ok=+b.dataset.a===q.answer;if(ok)score++;out.dataset.done="1";out.textContent=(ok?"Correct. ":"Not quite. ")+q.explanation;const next=document.createElement("button");next.className="link-button";next.textContent=at===state.quiz.length-1?"See result →":"Next question →";next.addEventListener("click",()=>{at++;show()});out.appendChild(next)}));
   };
   show();
