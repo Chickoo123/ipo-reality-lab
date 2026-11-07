@@ -2,6 +2,10 @@
 
 **Understand the issue. Research the issuer. Follow the proceeds.**
 
+Part of **[Harshil Desai's evidence-first tools for Indian finance](https://github.com/Chickoo123)**: [LoanLens](https://github.com/Chickoo123/loanlens) · [PaisaTrail](https://github.com/Chickoo123/paisatrail) · [IPO Lab](https://github.com/Chickoo123/ipo-reality-lab) · [RecoverX](https://github.com/Chickoo123/RecoverX)
+
+![IPO Lab home page](docs/screenshot.png)
+
 IPO Lab is an evidence-led Indian IPO research and investor-education platform. It brings together official offer-document links, company fundamentals, issue structure, source-linked proceeds utilisation and practical learning tools. The goal is to help readers understand what an IPO actually discloses — not to tell them whether to apply.
 
 ## What the platform includes
