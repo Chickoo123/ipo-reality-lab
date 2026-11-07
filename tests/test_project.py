@@ -21,8 +21,13 @@ def test_public_academy_uses_neutral_lesson_ids():
 
 def test_pages_workflow_builds_deployment_artifact_after_validation():
     workflow=(ROOT/".github/workflows/pages.yml").read_text(encoding="utf-8")
-    assert "actions/configure-pages@v5" in workflow and "enablement: true" not in workflow
+    # Check the actions are present without pinning versions, so Dependabot updates don't break CI.
+    import re
+    for action in ("actions/configure-pages", "actions/upload-pages-artifact", "actions/deploy-pages"):
+        assert re.search(re.escape(action) + r"@v\d+", workflow), action
+    assert "enablement: true" not in workflow
     assert "path: _site" in workflow
+    assert "needs: validate" in workflow
 
 def test_public_audit_brief_and_architecture_docs_exist():
     assert (ROOT/"docs/technical-audit-brief.md").exists()
