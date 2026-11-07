@@ -1,4 +1,4 @@
-const $=s=>document.querySelector(s), $=s=>[...document.querySelectorAll(s)];
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const state={lessons:[],cases:[],scams:[],checklist:[],ipos:[],currentScam:0,quiz:[],buildInfo:{build_date:"not recorded"}};
 const safeStorageGet=(key,fallback=null)=>{try{const value=localStorage.getItem(key);return value===null?fallback:value}catch{return fallback}};
@@ -173,7 +173,7 @@ function wireResearch(){
  $$("[data-open]").forEach(b=>b.addEventListener("click",()=>openPanel(b.dataset.open)));
 }
 function wireToolTabs(){
- const tabs=$(".tool-tabs button"),panels=$(".tool-panel"),list=$(".tool-tabs");
+ const tabs=$$(".tool-tabs button"),panels=$$(".tool-panel"),list=$(".tool-tabs");
  list.setAttribute("role","tablist");
  function activate(tab,focus=false){
   tabs.forEach((b,i)=>{
@@ -198,7 +198,7 @@ function wireToolTabs(){
  activate(tabs.find(b=>b.classList.contains("active"))||tabs[0]);
 }
 function wireToolJumps(){
- $("[data-jump-tool]").forEach(b=>b.addEventListener("click",()=>{
+ $$("[data-jump-tool]").forEach(b=>b.addEventListener("click",()=>{
   const target=$(`.tool-tabs button[data-tool="${b.dataset.jumpTool}"]`);
   if(target){target.click();$("#tools").scrollIntoView({behavior:"smooth",block:"start"});}
  }));

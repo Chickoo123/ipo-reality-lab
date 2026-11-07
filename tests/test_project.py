@@ -104,7 +104,7 @@ def test_all_static_javascript_id_selectors_exist_in_html():
     parser.feed((ROOT / "index.html").read_text(encoding="utf-8"))
     js = (ROOT / "app.js").read_text(encoding="utf-8")
     selectors = set(re.findall(r'\$\("#([A-Za-z0-9_-]+)"\)', js))
-    dynamic = {"quiz-again", "quiz-feedback", "scam-feedback", "scam-next"}
+    dynamic = {"quiz-again", "quiz-feedback", "research-issuer", "scam-feedback", "scam-next"}
     assert (selectors - dynamic).issubset(parser.ids), sorted((selectors - dynamic) - parser.ids)
 
 
@@ -174,3 +174,16 @@ def test_neon_dark_theme_is_default_and_light_mode_is_opt_in():
     assert 'safeStorageGet("ipoRealityDark","1")!=="0"' in js
     assert "#080a16" in css and "#a78bfa" in css and "#22d3ee" in css and "#f472b6" in css
     assert 'id="theme"' in html
+
+
+def test_dom_helpers_are_distinct_and_collections_use_plural_helper():
+    """Guard against `$$` being collapsed to `$` by shell/regex substitution."""
+    import re
+    js = (ROOT / "app.js").read_text(encoding="utf-8")
+    first_line = js.splitlines()[0]
+    assert "$=s=>document.querySelector(s)" in first_line
+    assert "$$=s=>[...document.querySelectorAll(s)]" in first_line
+    assert "$$$" not in js
+    # A single-element `$()` result never has array methods.
+    misuse = re.findall(r'(?<![\w$])\$\("[^"]+"\)\.(?:forEach|map|filter|some|every|reduce)\(', js)
+    assert not misuse, misuse

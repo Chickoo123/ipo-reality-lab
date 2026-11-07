@@ -157,16 +157,22 @@ def validate_records(records, source_registry, policy):
 
     return errors
 
-def validate_json_urls(value, path="$"):
-    """Validate every explicit URL field in a JSON document."""
+def validate_json_urls(value, path="$", in_schema_properties=False):
+    """Validate every explicit URL field in a JSON document.
+
+    Keys directly inside a JSON Schema ``properties`` map are field *definitions*
+    (for example ``{"url": {"type": "string"}}``), not URL values, so they are
+    traversed but not checked as links.
+    """
     errors = []
     if isinstance(value, dict):
         for key, child in value.items():
             child_path = f"{path}.{key}"
-            if str(key).lower() in {"url", "href", "uri"} and child is not None:
+            is_url_key = str(key).lower() in {"url", "href", "uri"}
+            if is_url_key and child is not None and not in_schema_properties:
                 if not isinstance(child, str) or not child.startswith("https://"):
                     errors.append(f"{child_path}: URL must use HTTPS")
-            errors.extend(validate_json_urls(child, child_path))
+            errors.extend(validate_json_urls(child, child_path, key == "properties" and isinstance(child, dict)))
     elif isinstance(value, list):
         for index, child in enumerate(value):
             errors.extend(validate_json_urls(child, f"{path}[{index}]"))
