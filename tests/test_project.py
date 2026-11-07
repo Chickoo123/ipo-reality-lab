@@ -172,12 +172,14 @@ def test_build_metadata_and_logic_module_are_available():
     assert (ROOT/"logic.js").exists()
     html=(ROOT/"index.html").read_text(encoding="utf-8")
     assert html.index('src="logic.js"') < html.index('src="app.js"')
-def test_neon_dark_theme_is_default_and_light_mode_is_opt_in():
+def test_editorial_light_theme_is_default_and_dark_mode_is_opt_in():
     html=(ROOT/"index.html").read_text(encoding="utf-8")
     js=(ROOT/"app.js").read_text(encoding="utf-8")
     css=(ROOT/"styles.css").read_text(encoding="utf-8")
-    assert 'safeStorageGet("ipoRealityDark","1")!=="0"' in js
-    assert "#080a16" in css and "#a78bfa" in css and "#22d3ee" in css and "#f472b6" in css
+    assert 'safeStorageGet("ipoRealityDark","0")==="1"' in js
+    assert "Evidence Editorial alignment" in css and "body.dark" in css
+    assert html.index('href="family.css"') < html.index('href="styles.css"')
+    assert 'class="hd-family"' in html and 'aria-current="page">IPO Lab' in html
     assert 'id="theme"' in html
 
 

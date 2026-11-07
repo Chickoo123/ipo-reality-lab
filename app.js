@@ -244,9 +244,9 @@ function wireQuiz(){
  });
 }
 function wireTheme(){
- let dark=safeStorageGet("ipoRealityDark","1")!=="0";
+ let dark=safeStorageGet("ipoRealityDark","0")==="1";
  const button=$("#theme");
- const apply=()=>{document.body.classList.toggle("dark",dark);button.setAttribute("aria-pressed",String(dark));button.setAttribute("aria-label",dark?"Switch to light theme":"Switch to dark theme");};
+ const apply=()=>{document.body.classList.toggle("dark",dark);document.documentElement.dataset.theme=dark?"dark":"light";button.setAttribute("aria-pressed",String(dark));button.setAttribute("aria-label",dark?"Switch to light theme":"Switch to dark theme");};
  apply();
  button.addEventListener("click",()=>{dark=!dark;apply();safeStorageSet("ipoRealityDark",dark?"1":"0");});
 }
